@@ -9,6 +9,21 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>capnprotoCxxTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>capnprotoCxxTestsIos.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +33,31 @@
 			<true/>
 		</dict>
 		<key>963BA95D18CD0B540066EF3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>963BAA1F18CD12C60066EF3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>963BAA2C18CD12DA0066EF3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>963BAA5F18CD15560066EF3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>963BAA6C18CD174B0066EF3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>963BAA8318CD174B0066EF3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

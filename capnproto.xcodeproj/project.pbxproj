@@ -8,14 +8,104 @@
 
 /* Begin PBXBuildFile section */
 		963BA95218CD0B540066EF3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BA95118CD0B540066EF3A /* Foundation.framework */; };
-		963BA95718CD0B540066EF3A /* capnproto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 963BA95618CD0B540066EF3A /* capnproto.h */; };
-		963BA95918CD0B540066EF3A /* capnproto.m in Sources */ = {isa = PBXBuildFile; fileRef = 963BA95818CD0B540066EF3A /* capnproto.m */; };
 		963BA96018CD0B540066EF3A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BA95F18CD0B540066EF3A /* XCTest.framework */; };
 		963BA96118CD0B540066EF3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BA95118CD0B540066EF3A /* Foundation.framework */; };
 		963BA96318CD0B540066EF3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BA96218CD0B540066EF3A /* UIKit.framework */; };
 		963BA96618CD0B540066EF3A /* libcapnproto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BA94E18CD0B540066EF3A /* libcapnproto.a */; };
 		963BA96C18CD0B540066EF3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 963BA96A18CD0B540066EF3A /* InfoPlist.strings */; };
 		963BA96E18CD0B540066EF3A /* capnprotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 963BA96D18CD0B540066EF3A /* capnprotoTests.m */; };
+		963BA9AE18CD0CB90066EF3A /* any.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA99718CD0CB90066EF3A /* any.c++ */; };
+		963BA9AF18CD0CB90066EF3A /* arena.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA99818CD0CB90066EF3A /* arena.c++ */; };
+		963BA9B018CD0CB90066EF3A /* blob.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA99918CD0CB90066EF3A /* blob.c++ */; };
+		963BA9B118CD0CB90066EF3A /* c++.capnp.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA99A18CD0CB90066EF3A /* c++.capnp.c++ */; };
+		963BA9B218CD0CB90066EF3A /* capability.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA99B18CD0CB90066EF3A /* capability.c++ */; };
+		963BA9B318CD0CB90066EF3A /* dynamic-capability.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA99C18CD0CB90066EF3A /* dynamic-capability.c++ */; };
+		963BA9B418CD0CB90066EF3A /* dynamic.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA99D18CD0CB90066EF3A /* dynamic.c++ */; };
+		963BA9B518CD0CB90066EF3A /* ez-rpc.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA99E18CD0CB90066EF3A /* ez-rpc.c++ */; };
+		963BA9B618CD0CB90066EF3A /* layout.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA99F18CD0CB90066EF3A /* layout.c++ */; };
+		963BA9B718CD0CB90066EF3A /* list.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9A018CD0CB90066EF3A /* list.c++ */; };
+		963BA9B818CD0CB90066EF3A /* message.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9A118CD0CB90066EF3A /* message.c++ */; };
+		963BA9BA18CD0CB90066EF3A /* rpc-twoparty.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9A318CD0CB90066EF3A /* rpc-twoparty.c++ */; };
+		963BA9BB18CD0CB90066EF3A /* rpc-twoparty.capnp.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9A418CD0CB90066EF3A /* rpc-twoparty.capnp.c++ */; };
+		963BA9BC18CD0CB90066EF3A /* rpc.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9A518CD0CB90066EF3A /* rpc.c++ */; };
+		963BA9BD18CD0CB90066EF3A /* rpc.capnp.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9A618CD0CB90066EF3A /* rpc.capnp.c++ */; };
+		963BA9BE18CD0CB90066EF3A /* schema-loader.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9A718CD0CB90066EF3A /* schema-loader.c++ */; };
+		963BA9C018CD0CB90066EF3A /* schema.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9A918CD0CB90066EF3A /* schema.c++ */; };
+		963BA9C118CD0CB90066EF3A /* serialize-async.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9AA18CD0CB90066EF3A /* serialize-async.c++ */; };
+		963BA9C218CD0CB90066EF3A /* serialize-packed.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9AB18CD0CB90066EF3A /* serialize-packed.c++ */; };
+		963BA9C318CD0CB90066EF3A /* serialize.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9AC18CD0CB90066EF3A /* serialize.c++ */; };
+		963BA9C418CD0CB90066EF3A /* stringify.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9AD18CD0CB90066EF3A /* stringify.c++ */; };
+		963BA9ED18CD0CF60066EF3A /* arena.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9DD18CD0CF60066EF3A /* arena.c++ */; };
+		963BA9EE18CD0CF60066EF3A /* array.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9DE18CD0CF60066EF3A /* array.c++ */; };
+		963BA9EF18CD0CF60066EF3A /* async-io.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9DF18CD0CF60066EF3A /* async-io.c++ */; };
+		963BA9F018CD0CF60066EF3A /* async-unix.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9E018CD0CF60066EF3A /* async-unix.c++ */; };
+		963BA9F118CD0CF60066EF3A /* async.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9E118CD0CF60066EF3A /* async.c++ */; };
+		963BA9F218CD0CF60066EF3A /* common.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9E218CD0CF60066EF3A /* common.c++ */; };
+		963BA9F318CD0CF60066EF3A /* debug.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9E318CD0CF60066EF3A /* debug.c++ */; };
+		963BA9F418CD0CF60066EF3A /* exception.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9E418CD0CF60066EF3A /* exception.c++ */; };
+		963BA9F518CD0CF60066EF3A /* io.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9E518CD0CF60066EF3A /* io.c++ */; };
+		963BA9F618CD0CF60066EF3A /* main.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9E618CD0CF60066EF3A /* main.c++ */; };
+		963BA9F718CD0CF60066EF3A /* memory.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9E718CD0CF60066EF3A /* memory.c++ */; };
+		963BA9F818CD0CF60066EF3A /* mutex.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9E818CD0CF60066EF3A /* mutex.c++ */; };
+		963BA9F918CD0CF60066EF3A /* refcount.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9E918CD0CF60066EF3A /* refcount.c++ */; };
+		963BA9FA18CD0CF60066EF3A /* string.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9EA18CD0CF60066EF3A /* string.c++ */; };
+		963BA9FB18CD0CF60066EF3A /* thread.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9EB18CD0CF60066EF3A /* thread.c++ */; };
+		963BA9FC18CD0CF60066EF3A /* units.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BA9EC18CD0CF60066EF3A /* units.c++ */; };
+		963BAA0118CD0D160066EF3A /* char.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA0018CD0D160066EF3A /* char.c++ */; };
+		963BAA6318CD15560066EF3A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA6218CD15560066EF3A /* main.cpp */; };
+		963BAA6518CD15560066EF3A /* capnprotoCxxTests.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 963BAA6418CD15560066EF3A /* capnprotoCxxTests.1 */; };
+		963BAA6E18CD174B0066EF3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BA95118CD0B540066EF3A /* Foundation.framework */; };
+		963BAA7018CD174B0066EF3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BAA6F18CD174B0066EF3A /* CoreGraphics.framework */; };
+		963BAA7118CD174B0066EF3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BA96218CD0B540066EF3A /* UIKit.framework */; };
+		963BAA7718CD174B0066EF3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 963BAA7518CD174B0066EF3A /* InfoPlist.strings */; };
+		963BAA7918CD174B0066EF3A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA7818CD174B0066EF3A /* main.mm */; };
+		963BAA7D18CD174B0066EF3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA7C18CD174B0066EF3A /* AppDelegate.m */; };
+		963BAA7F18CD174B0066EF3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963BAA7E18CD174B0066EF3A /* Images.xcassets */; };
+		963BAA9818CD19270066EF3A /* arena-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA3818CD132E0066EF3A /* arena-test.c++ */; };
+		963BAA9918CD19270066EF3A /* array-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA3918CD132E0066EF3A /* array-test.c++ */; };
+		963BAA9A18CD19270066EF3A /* async-io-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA3A18CD132E0066EF3A /* async-io-test.c++ */; };
+		963BAA9B18CD19270066EF3A /* async-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA3B18CD132E0066EF3A /* async-test.c++ */; };
+		963BAA9C18CD19270066EF3A /* async-unix-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA3C18CD132E0066EF3A /* async-unix-test.c++ */; };
+		963BAA9D18CD19270066EF3A /* common-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA3D18CD132E0066EF3A /* common-test.c++ */; };
+		963BAA9E18CD19270066EF3A /* debug-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA3E18CD132E0066EF3A /* debug-test.c++ */; };
+		963BAA9F18CD19270066EF3A /* exception-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA3F18CD132E0066EF3A /* exception-test.c++ */; };
+		963BAAA018CD19270066EF3A /* function-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA4018CD132E0066EF3A /* function-test.c++ */; };
+		963BAAA118CD19270066EF3A /* memory-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA4118CD132E0066EF3A /* memory-test.c++ */; };
+		963BAAA218CD19270066EF3A /* mutex-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA4218CD132E0066EF3A /* mutex-test.c++ */; };
+		963BAAA318CD19270066EF3A /* one-of-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA4318CD132E0066EF3A /* one-of-test.c++ */; };
+		963BAAA418CD19270066EF3A /* refcount-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA4418CD132E0066EF3A /* refcount-test.c++ */; };
+		963BAAA518CD19270066EF3A /* string-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA4518CD132E0066EF3A /* string-test.c++ */; };
+		963BAAA618CD19270066EF3A /* string-tree-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA4618CD132E0066EF3A /* string-tree-test.c++ */; };
+		963BAAA718CD19270066EF3A /* tuple-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA4718CD132E0066EF3A /* tuple-test.c++ */; };
+		963BAAA818CD19270066EF3A /* units-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAA4818CD132E0066EF3A /* units-test.c++ */; };
+		963BAAA918CD19440066EF3A /* libcapnproto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BA94E18CD0B540066EF3A /* libcapnproto.a */; };
+		963BAAB718CD1A890066EF3A /* string-tree.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAB618CD1A890066EF3A /* string-tree.c++ */; };
+		963BAACF18CD1B190066EF3A /* any-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAB918CD1B190066EF3A /* any-test.c++ */; };
+		963BAAD018CD1B190066EF3A /* blob-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAABA18CD1B190066EF3A /* blob-test.c++ */; };
+		963BAAD118CD1B190066EF3A /* capability-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAABB18CD1B190066EF3A /* capability-test.c++ */; };
+		963BAAD218CD1B190066EF3A /* common-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAABC18CD1B190066EF3A /* common-test.c++ */; };
+		963BAAD318CD1B190066EF3A /* dynamic-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAABD18CD1B190066EF3A /* dynamic-test.c++ */; };
+		963BAAD418CD1B190066EF3A /* encoding-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAABE18CD1B190066EF3A /* encoding-test.c++ */; };
+		963BAAD518CD1B190066EF3A /* endian-fallback-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAABF18CD1B190066EF3A /* endian-fallback-test.c++ */; };
+		963BAAD618CD1B190066EF3A /* endian-reverse-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAC018CD1B190066EF3A /* endian-reverse-test.c++ */; };
+		963BAAD718CD1B190066EF3A /* endian-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAC118CD1B190066EF3A /* endian-test.c++ */; };
+		963BAAD818CD1B190066EF3A /* ez-rpc-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAC218CD1B190066EF3A /* ez-rpc-test.c++ */; };
+		963BAAD918CD1B190066EF3A /* layout-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAC318CD1B190066EF3A /* layout-test.c++ */; };
+		963BAADA18CD1B190066EF3A /* message-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAC418CD1B190066EF3A /* message-test.c++ */; };
+		963BAADB18CD1B190066EF3A /* orphan-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAC518CD1B190066EF3A /* orphan-test.c++ */; };
+		963BAADC18CD1B190066EF3A /* rpc-twoparty-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAC618CD1B190066EF3A /* rpc-twoparty-test.c++ */; };
+		963BAADD18CD1B190066EF3A /* schema-loader-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAC718CD1B190066EF3A /* schema-loader-test.c++ */; };
+		963BAADF18CD1B190066EF3A /* schema-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAC918CD1B190066EF3A /* schema-test.c++ */; };
+		963BAAE018CD1B190066EF3A /* serialize-async-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAACA18CD1B190066EF3A /* serialize-async-test.c++ */; };
+		963BAAE118CD1B190066EF3A /* serialize-packed-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAACB18CD1B190066EF3A /* serialize-packed-test.c++ */; };
+		963BAAE218CD1B190066EF3A /* serialize-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAACC18CD1B190066EF3A /* serialize-test.c++ */; };
+		963BAAE318CD1B190066EF3A /* stringify-test.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAACD18CD1B190066EF3A /* stringify-test.c++ */; };
+		963BAAE418CD1B190066EF3A /* test-util.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAACE18CD1B190066EF3A /* test-util.c++ */; };
+		963BAAEA18CD1BC20066EF3A /* test.capnp.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAE918CD1BC20066EF3A /* test.capnp.c++ */; };
+		963BAAEF18CD1EB10066EF3A /* test-import.capnp.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAED18CD1EB10066EF3A /* test-import.capnp.c++ */; };
+		963BAAF018CD1EB10066EF3A /* test-import2.capnp.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAEE18CD1EB10066EF3A /* test-import2.capnp.c++ */; };
+		963BAAF818CD1F980066EF3A /* schema.capnp.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAF718CD1F980066EF3A /* schema.capnp.c++ */; };
+		968582E318CDDA9D0088EE70 /* libgtest-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BAAB418CD19900066EF3A /* libgtest-ios.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +116,62 @@
 			remoteGlobalIDString = 963BA94D18CD0B540066EF3A;
 			remoteInfo = capnproto;
 		};
+		963BAA0E18CD12980066EF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963BAA0218CD12980066EF3A /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
+			remoteInfo = "gtest-framework";
+		};
+		963BAA1018CD12980066EF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963BAA0218CD12980066EF3A /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C848FA101A209C0083642A;
+			remoteInfo = "gtest-static";
+		};
+		963BAA1218CD12980066EF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963BAA0218CD12980066EF3A /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C8490B101A217E0083642A;
+			remoteInfo = "gtest_main-static";
+		};
+		963BAA1418CD12980066EF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963BAA0218CD12980066EF3A /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40899F430FFA7184000B29AE;
+			remoteInfo = "gtest_unittest-framework";
+		};
+		963BAA1618CD12980066EF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963BAA0218CD12980066EF3A /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84987101A36850083642A;
+			remoteInfo = "gtest_unittest-static";
+		};
+		963BAA1818CD12980066EF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963BAA0218CD12980066EF3A /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
+			remoteInfo = "sample1_unittest-framework";
+		};
+		963BAA1A18CD12980066EF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963BAA0218CD12980066EF3A /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84997101A36A60083642A;
+			remoteInfo = "sample1_unittest-static";
+		};
+		963BAAB318CD19900066EF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963BAA0218CD12980066EF3A /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 963BAAB118CD19640066EF3A;
+			remoteInfo = "gtest-ios";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,9 +181,18 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				963BA95718CD0B540066EF3A /* capnproto.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963BAA5E18CD15560066EF3A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				963BAA6518CD15560066EF3A /* capnprotoCxxTests.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -45,14 +200,164 @@
 		963BA94E18CD0B540066EF3A /* libcapnproto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcapnproto.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		963BA95118CD0B540066EF3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		963BA95518CD0B540066EF3A /* capnproto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "capnproto-Prefix.pch"; sourceTree = "<group>"; };
-		963BA95618CD0B540066EF3A /* capnproto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = capnproto.h; sourceTree = "<group>"; };
-		963BA95818CD0B540066EF3A /* capnproto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = capnproto.m; sourceTree = "<group>"; };
 		963BA95E18CD0B540066EF3A /* capnprotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = capnprotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		963BA95F18CD0B540066EF3A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		963BA96218CD0B540066EF3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		963BA96918CD0B540066EF3A /* capnprotoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "capnprotoTests-Info.plist"; sourceTree = "<group>"; };
 		963BA96B18CD0B540066EF3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		963BA96D18CD0B540066EF3A /* capnprotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = capnprotoTests.m; sourceTree = "<group>"; };
+		963BA97A18CD0C8D0066EF3A /* any.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = any.h; sourceTree = "<group>"; };
+		963BA97B18CD0C8D0066EF3A /* arena.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arena.h; sourceTree = "<group>"; };
+		963BA97C18CD0C8D0066EF3A /* blob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blob.h; sourceTree = "<group>"; };
+		963BA97D18CD0C8D0066EF3A /* c++.capnp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "c++.capnp.h"; sourceTree = "<group>"; };
+		963BA97E18CD0C8D0066EF3A /* capability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = capability.h; sourceTree = "<group>"; };
+		963BA97F18CD0C8D0066EF3A /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		963BA98018CD0C8D0066EF3A /* dynamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dynamic.h; sourceTree = "<group>"; };
+		963BA98118CD0C8D0066EF3A /* endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = endian.h; sourceTree = "<group>"; };
+		963BA98218CD0C8D0066EF3A /* ez-rpc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ez-rpc.h"; sourceTree = "<group>"; };
+		963BA98318CD0C8D0066EF3A /* generated-header-support.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "generated-header-support.h"; sourceTree = "<group>"; };
+		963BA98418CD0C8D0066EF3A /* layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layout.h; sourceTree = "<group>"; };
+		963BA98518CD0C8D0066EF3A /* list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		963BA98618CD0C8D0066EF3A /* message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		963BA98718CD0C8D0066EF3A /* orphan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = orphan.h; sourceTree = "<group>"; };
+		963BA98818CD0C8D0066EF3A /* pointer-helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pointer-helpers.h"; sourceTree = "<group>"; };
+		963BA98918CD0C8D0066EF3A /* pretty-print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pretty-print.h"; sourceTree = "<group>"; };
+		963BA98A18CD0C8D0066EF3A /* rpc-prelude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rpc-prelude.h"; sourceTree = "<group>"; };
+		963BA98B18CD0C8D0066EF3A /* rpc-twoparty.capnp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rpc-twoparty.capnp.h"; sourceTree = "<group>"; };
+		963BA98C18CD0C8D0066EF3A /* rpc-twoparty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rpc-twoparty.h"; sourceTree = "<group>"; };
+		963BA98D18CD0C8D0066EF3A /* rpc.capnp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rpc.capnp.h; sourceTree = "<group>"; };
+		963BA98E18CD0C8D0066EF3A /* rpc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rpc.h; sourceTree = "<group>"; };
+		963BA98F18CD0C8D0066EF3A /* schema-loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "schema-loader.h"; sourceTree = "<group>"; };
+		963BA99118CD0C8D0066EF3A /* schema.capnp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schema.capnp.h; sourceTree = "<group>"; };
+		963BA99218CD0C8D0066EF3A /* schema.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schema.h; sourceTree = "<group>"; };
+		963BA99318CD0C8D0066EF3A /* serialize-async.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "serialize-async.h"; sourceTree = "<group>"; };
+		963BA99418CD0C8D0066EF3A /* serialize-packed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "serialize-packed.h"; sourceTree = "<group>"; };
+		963BA99518CD0C8D0066EF3A /* serialize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = serialize.h; sourceTree = "<group>"; };
+		963BA99718CD0CB90066EF3A /* any.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "any.c++"; sourceTree = "<group>"; };
+		963BA99818CD0CB90066EF3A /* arena.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "arena.c++"; sourceTree = "<group>"; };
+		963BA99918CD0CB90066EF3A /* blob.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "blob.c++"; sourceTree = "<group>"; };
+		963BA99A18CD0CB90066EF3A /* c++.capnp.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "c++.capnp.c++"; sourceTree = "<group>"; };
+		963BA99B18CD0CB90066EF3A /* capability.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "capability.c++"; sourceTree = "<group>"; };
+		963BA99C18CD0CB90066EF3A /* dynamic-capability.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "dynamic-capability.c++"; sourceTree = "<group>"; };
+		963BA99D18CD0CB90066EF3A /* dynamic.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "dynamic.c++"; sourceTree = "<group>"; };
+		963BA99E18CD0CB90066EF3A /* ez-rpc.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ez-rpc.c++"; sourceTree = "<group>"; };
+		963BA99F18CD0CB90066EF3A /* layout.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "layout.c++"; sourceTree = "<group>"; };
+		963BA9A018CD0CB90066EF3A /* list.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "list.c++"; sourceTree = "<group>"; };
+		963BA9A118CD0CB90066EF3A /* message.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "message.c++"; sourceTree = "<group>"; };
+		963BA9A318CD0CB90066EF3A /* rpc-twoparty.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "rpc-twoparty.c++"; sourceTree = "<group>"; };
+		963BA9A418CD0CB90066EF3A /* rpc-twoparty.capnp.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "rpc-twoparty.capnp.c++"; sourceTree = "<group>"; };
+		963BA9A518CD0CB90066EF3A /* rpc.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "rpc.c++"; sourceTree = "<group>"; };
+		963BA9A618CD0CB90066EF3A /* rpc.capnp.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "rpc.capnp.c++"; sourceTree = "<group>"; };
+		963BA9A718CD0CB90066EF3A /* schema-loader.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "schema-loader.c++"; sourceTree = "<group>"; };
+		963BA9A918CD0CB90066EF3A /* schema.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "schema.c++"; sourceTree = "<group>"; };
+		963BA9AA18CD0CB90066EF3A /* serialize-async.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "serialize-async.c++"; sourceTree = "<group>"; };
+		963BA9AB18CD0CB90066EF3A /* serialize-packed.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "serialize-packed.c++"; sourceTree = "<group>"; };
+		963BA9AC18CD0CB90066EF3A /* serialize.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "serialize.c++"; sourceTree = "<group>"; };
+		963BA9AD18CD0CB90066EF3A /* stringify.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "stringify.c++"; sourceTree = "<group>"; };
+		963BA9C518CD0CDD0066EF3A /* arena.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arena.h; sourceTree = "<group>"; };
+		963BA9C618CD0CDD0066EF3A /* array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		963BA9C718CD0CDD0066EF3A /* async-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "async-inl.h"; sourceTree = "<group>"; };
+		963BA9C818CD0CDD0066EF3A /* async-io.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "async-io.h"; sourceTree = "<group>"; };
+		963BA9C918CD0CDD0066EF3A /* async-prelude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "async-prelude.h"; sourceTree = "<group>"; };
+		963BA9CA18CD0CDD0066EF3A /* async-unix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "async-unix.h"; sourceTree = "<group>"; };
+		963BA9CB18CD0CDD0066EF3A /* async.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = async.h; sourceTree = "<group>"; };
+		963BA9CC18CD0CDD0066EF3A /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		963BA9CD18CD0CDD0066EF3A /* debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		963BA9CE18CD0CDD0066EF3A /* exception.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exception.h; sourceTree = "<group>"; };
+		963BA9CF18CD0CDD0066EF3A /* function.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = function.h; sourceTree = "<group>"; };
+		963BA9D018CD0CDD0066EF3A /* io.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
+		963BA9D118CD0CDD0066EF3A /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		963BA9D218CD0CDD0066EF3A /* memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
+		963BA9D318CD0CDD0066EF3A /* mutex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mutex.h; sourceTree = "<group>"; };
+		963BA9D418CD0CDD0066EF3A /* one-of.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "one-of.h"; sourceTree = "<group>"; };
+		963BA9D518CD0CDD0066EF3A /* refcount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = refcount.h; sourceTree = "<group>"; };
+		963BA9D618CD0CDD0066EF3A /* string-tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "string-tree.h"; sourceTree = "<group>"; };
+		963BA9D718CD0CDD0066EF3A /* string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = string.h; sourceTree = "<group>"; };
+		963BA9D818CD0CDD0066EF3A /* thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		963BA9D918CD0CDD0066EF3A /* threadlocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threadlocal.h; sourceTree = "<group>"; };
+		963BA9DA18CD0CDD0066EF3A /* tuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tuple.h; sourceTree = "<group>"; };
+		963BA9DB18CD0CDD0066EF3A /* units.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = units.h; sourceTree = "<group>"; };
+		963BA9DC18CD0CDD0066EF3A /* vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		963BA9DD18CD0CF60066EF3A /* arena.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "arena.c++"; sourceTree = "<group>"; };
+		963BA9DE18CD0CF60066EF3A /* array.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "array.c++"; sourceTree = "<group>"; };
+		963BA9DF18CD0CF60066EF3A /* async-io.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "async-io.c++"; sourceTree = "<group>"; };
+		963BA9E018CD0CF60066EF3A /* async-unix.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "async-unix.c++"; sourceTree = "<group>"; };
+		963BA9E118CD0CF60066EF3A /* async.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "async.c++"; sourceTree = "<group>"; };
+		963BA9E218CD0CF60066EF3A /* common.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "common.c++"; sourceTree = "<group>"; };
+		963BA9E318CD0CF60066EF3A /* debug.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "debug.c++"; sourceTree = "<group>"; };
+		963BA9E418CD0CF60066EF3A /* exception.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "exception.c++"; sourceTree = "<group>"; };
+		963BA9E518CD0CF60066EF3A /* io.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "io.c++"; sourceTree = "<group>"; };
+		963BA9E618CD0CF60066EF3A /* main.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "main.c++"; sourceTree = "<group>"; };
+		963BA9E718CD0CF60066EF3A /* memory.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "memory.c++"; sourceTree = "<group>"; };
+		963BA9E818CD0CF60066EF3A /* mutex.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "mutex.c++"; sourceTree = "<group>"; };
+		963BA9E918CD0CF60066EF3A /* refcount.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "refcount.c++"; sourceTree = "<group>"; };
+		963BA9EA18CD0CF60066EF3A /* string.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "string.c++"; sourceTree = "<group>"; };
+		963BA9EB18CD0CF60066EF3A /* thread.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "thread.c++"; sourceTree = "<group>"; };
+		963BA9EC18CD0CF60066EF3A /* units.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "units.c++"; sourceTree = "<group>"; };
+		963BA9FE18CD0D0F0066EF3A /* char.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = char.h; sourceTree = "<group>"; };
+		963BA9FF18CD0D0F0066EF3A /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		963BAA0018CD0D160066EF3A /* char.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "char.c++"; sourceTree = "<group>"; };
+		963BAA0218CD12980066EF3A /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = "capnproto/c++/gtest/xcode/gtest.xcodeproj"; sourceTree = "<group>"; };
+		963BAA3818CD132E0066EF3A /* arena-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "arena-test.c++"; sourceTree = "<group>"; };
+		963BAA3918CD132E0066EF3A /* array-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "array-test.c++"; sourceTree = "<group>"; };
+		963BAA3A18CD132E0066EF3A /* async-io-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "async-io-test.c++"; sourceTree = "<group>"; };
+		963BAA3B18CD132E0066EF3A /* async-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "async-test.c++"; sourceTree = "<group>"; };
+		963BAA3C18CD132E0066EF3A /* async-unix-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "async-unix-test.c++"; sourceTree = "<group>"; };
+		963BAA3D18CD132E0066EF3A /* common-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "common-test.c++"; sourceTree = "<group>"; };
+		963BAA3E18CD132E0066EF3A /* debug-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "debug-test.c++"; sourceTree = "<group>"; };
+		963BAA3F18CD132E0066EF3A /* exception-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "exception-test.c++"; sourceTree = "<group>"; };
+		963BAA4018CD132E0066EF3A /* function-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "function-test.c++"; sourceTree = "<group>"; };
+		963BAA4118CD132E0066EF3A /* memory-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "memory-test.c++"; sourceTree = "<group>"; };
+		963BAA4218CD132E0066EF3A /* mutex-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "mutex-test.c++"; sourceTree = "<group>"; };
+		963BAA4318CD132E0066EF3A /* one-of-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "one-of-test.c++"; sourceTree = "<group>"; };
+		963BAA4418CD132E0066EF3A /* refcount-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "refcount-test.c++"; sourceTree = "<group>"; };
+		963BAA4518CD132E0066EF3A /* string-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "string-test.c++"; sourceTree = "<group>"; };
+		963BAA4618CD132E0066EF3A /* string-tree-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "string-tree-test.c++"; sourceTree = "<group>"; };
+		963BAA4718CD132E0066EF3A /* tuple-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "tuple-test.c++"; sourceTree = "<group>"; };
+		963BAA4818CD132E0066EF3A /* units-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "units-test.c++"; sourceTree = "<group>"; };
+		963BAA6018CD15560066EF3A /* capnprotoCxxTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = capnprotoCxxTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		963BAA6218CD15560066EF3A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		963BAA6418CD15560066EF3A /* capnprotoCxxTests.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = capnprotoCxxTests.1; sourceTree = "<group>"; };
+		963BAA6D18CD174B0066EF3A /* capnprotoCxxTestsIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capnprotoCxxTestsIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		963BAA6F18CD174B0066EF3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		963BAA7418CD174B0066EF3A /* capnprotoCxxTestsIos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "capnprotoCxxTestsIos-Info.plist"; sourceTree = "<group>"; };
+		963BAA7618CD174B0066EF3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		963BAA7818CD174B0066EF3A /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		963BAA7A18CD174B0066EF3A /* capnprotoCxxTestsIos-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "capnprotoCxxTestsIos-Prefix.pch"; sourceTree = "<group>"; };
+		963BAA7B18CD174B0066EF3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		963BAA7C18CD174B0066EF3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		963BAA7E18CD174B0066EF3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		963BAAB618CD1A890066EF3A /* string-tree.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "string-tree.c++"; sourceTree = "<group>"; };
+		963BAAB918CD1B190066EF3A /* any-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "any-test.c++"; sourceTree = "<group>"; };
+		963BAABA18CD1B190066EF3A /* blob-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "blob-test.c++"; sourceTree = "<group>"; };
+		963BAABB18CD1B190066EF3A /* capability-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "capability-test.c++"; sourceTree = "<group>"; };
+		963BAABC18CD1B190066EF3A /* common-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "common-test.c++"; sourceTree = "<group>"; };
+		963BAABD18CD1B190066EF3A /* dynamic-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "dynamic-test.c++"; sourceTree = "<group>"; };
+		963BAABE18CD1B190066EF3A /* encoding-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "encoding-test.c++"; sourceTree = "<group>"; };
+		963BAABF18CD1B190066EF3A /* endian-fallback-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "endian-fallback-test.c++"; sourceTree = "<group>"; };
+		963BAAC018CD1B190066EF3A /* endian-reverse-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "endian-reverse-test.c++"; sourceTree = "<group>"; };
+		963BAAC118CD1B190066EF3A /* endian-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "endian-test.c++"; sourceTree = "<group>"; };
+		963BAAC218CD1B190066EF3A /* ez-rpc-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ez-rpc-test.c++"; sourceTree = "<group>"; };
+		963BAAC318CD1B190066EF3A /* layout-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "layout-test.c++"; sourceTree = "<group>"; };
+		963BAAC418CD1B190066EF3A /* message-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "message-test.c++"; sourceTree = "<group>"; };
+		963BAAC518CD1B190066EF3A /* orphan-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "orphan-test.c++"; sourceTree = "<group>"; };
+		963BAAC618CD1B190066EF3A /* rpc-twoparty-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "rpc-twoparty-test.c++"; sourceTree = "<group>"; };
+		963BAAC718CD1B190066EF3A /* schema-loader-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "schema-loader-test.c++"; sourceTree = "<group>"; };
+		963BAAC918CD1B190066EF3A /* schema-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "schema-test.c++"; sourceTree = "<group>"; };
+		963BAACA18CD1B190066EF3A /* serialize-async-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "serialize-async-test.c++"; sourceTree = "<group>"; };
+		963BAACB18CD1B190066EF3A /* serialize-packed-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "serialize-packed-test.c++"; sourceTree = "<group>"; };
+		963BAACC18CD1B190066EF3A /* serialize-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "serialize-test.c++"; sourceTree = "<group>"; };
+		963BAACD18CD1B190066EF3A /* stringify-test.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "stringify-test.c++"; sourceTree = "<group>"; };
+		963BAACE18CD1B190066EF3A /* test-util.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-util.c++"; sourceTree = "<group>"; };
+		963BAAE518CD1B520066EF3A /* test-util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-util.h"; sourceTree = "<group>"; };
+		963BAAE618CD1BB10066EF3A /* test.capnp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.capnp.h; sourceTree = "<group>"; };
+		963BAAE818CD1BC20066EF3A /* test.capnp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.capnp.h; sourceTree = "<group>"; };
+		963BAAE918CD1BC20066EF3A /* test.capnp.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test.capnp.c++"; sourceTree = "<group>"; };
+		963BAAEB18CD1EA80066EF3A /* test-import.capnp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-import.capnp.h"; sourceTree = "<group>"; };
+		963BAAEC18CD1EA80066EF3A /* test-import2.capnp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-import2.capnp.h"; sourceTree = "<group>"; };
+		963BAAED18CD1EB10066EF3A /* test-import.capnp.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-import.capnp.c++"; sourceTree = "<group>"; };
+		963BAAEE18CD1EB10066EF3A /* test-import2.capnp.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-import2.capnp.c++"; sourceTree = "<group>"; };
+		963BAAF718CD1F980066EF3A /* schema.capnp.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "schema.capnp.c++"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,14 +380,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		963BAA5D18CD15560066EF3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963BAA6A18CD174B0066EF3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968582E318CDDA9D0088EE70 /* libgtest-ios.a in Frameworks */,
+				963BAAA918CD19440066EF3A /* libcapnproto.a in Frameworks */,
+				963BAA7018CD174B0066EF3A /* CoreGraphics.framework in Frameworks */,
+				963BAA7118CD174B0066EF3A /* UIKit.framework in Frameworks */,
+				963BAA6E18CD174B0066EF3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		963BA94518CD0B540066EF3A = {
 			isa = PBXGroup;
 			children = (
-				963BA95318CD0B540066EF3A /* capnproto */,
+				963BAA0218CD12980066EF3A /* gtest.xcodeproj */,
+				963BA97918CD0C4F0066EF3A /* kj */,
+				963BA97818CD0C370066EF3A /* capnp */,
+				963BA97718CD0B9D0066EF3A /* src */,
 				963BA96718CD0B540066EF3A /* capnprotoTests */,
+				963BAA6118CD15560066EF3A /* capnprotoCxxTests */,
+				963BAA7218CD174B0066EF3A /* capnprotoCxxTestsIos */,
 				963BA95018CD0B540066EF3A /* Frameworks */,
 				963BA94F18CD0B540066EF3A /* Products */,
 			);
@@ -93,6 +422,8 @@
 			children = (
 				963BA94E18CD0B540066EF3A /* libcapnproto.a */,
 				963BA95E18CD0B540066EF3A /* capnprotoTests.xctest */,
+				963BAA6018CD15560066EF3A /* capnprotoCxxTests */,
+				963BAA6D18CD174B0066EF3A /* capnprotoCxxTestsIos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,18 +434,9 @@
 				963BA95118CD0B540066EF3A /* Foundation.framework */,
 				963BA95F18CD0B540066EF3A /* XCTest.framework */,
 				963BA96218CD0B540066EF3A /* UIKit.framework */,
+				963BAA6F18CD174B0066EF3A /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		963BA95318CD0B540066EF3A /* capnproto */ = {
-			isa = PBXGroup;
-			children = (
-				963BA95618CD0B540066EF3A /* capnproto.h */,
-				963BA95818CD0B540066EF3A /* capnproto.m */,
-				963BA95418CD0B540066EF3A /* Supporting Files */,
-			);
-			path = capnproto;
 			sourceTree = "<group>";
 		};
 		963BA95418CD0B540066EF3A /* Supporting Files */ = {
@@ -141,6 +463,239 @@
 				963BA96A18CD0B540066EF3A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		963BA97718CD0B9D0066EF3A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				963BA95418CD0B540066EF3A /* Supporting Files */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		963BA97818CD0C370066EF3A /* capnp */ = {
+			isa = PBXGroup;
+			children = (
+				963BAAB818CD1AED0066EF3A /* tests */,
+				963BA97A18CD0C8D0066EF3A /* any.h */,
+				963BA97B18CD0C8D0066EF3A /* arena.h */,
+				963BA97C18CD0C8D0066EF3A /* blob.h */,
+				963BA97D18CD0C8D0066EF3A /* c++.capnp.h */,
+				963BA97E18CD0C8D0066EF3A /* capability.h */,
+				963BA97F18CD0C8D0066EF3A /* common.h */,
+				963BA98018CD0C8D0066EF3A /* dynamic.h */,
+				963BA98118CD0C8D0066EF3A /* endian.h */,
+				963BA98218CD0C8D0066EF3A /* ez-rpc.h */,
+				963BA98318CD0C8D0066EF3A /* generated-header-support.h */,
+				963BA98418CD0C8D0066EF3A /* layout.h */,
+				963BA98518CD0C8D0066EF3A /* list.h */,
+				963BA98618CD0C8D0066EF3A /* message.h */,
+				963BA98718CD0C8D0066EF3A /* orphan.h */,
+				963BA98818CD0C8D0066EF3A /* pointer-helpers.h */,
+				963BA98918CD0C8D0066EF3A /* pretty-print.h */,
+				963BA98A18CD0C8D0066EF3A /* rpc-prelude.h */,
+				963BA98B18CD0C8D0066EF3A /* rpc-twoparty.capnp.h */,
+				963BA98C18CD0C8D0066EF3A /* rpc-twoparty.h */,
+				963BA98D18CD0C8D0066EF3A /* rpc.capnp.h */,
+				963BA98E18CD0C8D0066EF3A /* rpc.h */,
+				963BA98F18CD0C8D0066EF3A /* schema-loader.h */,
+				963BA99118CD0C8D0066EF3A /* schema.capnp.h */,
+				963BA99218CD0C8D0066EF3A /* schema.h */,
+				963BA99318CD0C8D0066EF3A /* serialize-async.h */,
+				963BA99418CD0C8D0066EF3A /* serialize-packed.h */,
+				963BA99518CD0C8D0066EF3A /* serialize.h */,
+				963BA99718CD0CB90066EF3A /* any.c++ */,
+				963BA99818CD0CB90066EF3A /* arena.c++ */,
+				963BA99918CD0CB90066EF3A /* blob.c++ */,
+				963BA99A18CD0CB90066EF3A /* c++.capnp.c++ */,
+				963BA99B18CD0CB90066EF3A /* capability.c++ */,
+				963BA99C18CD0CB90066EF3A /* dynamic-capability.c++ */,
+				963BA99D18CD0CB90066EF3A /* dynamic.c++ */,
+				963BA99E18CD0CB90066EF3A /* ez-rpc.c++ */,
+				963BA99F18CD0CB90066EF3A /* layout.c++ */,
+				963BA9A018CD0CB90066EF3A /* list.c++ */,
+				963BA9A118CD0CB90066EF3A /* message.c++ */,
+				963BA9A318CD0CB90066EF3A /* rpc-twoparty.c++ */,
+				963BA9A418CD0CB90066EF3A /* rpc-twoparty.capnp.c++ */,
+				963BA9A518CD0CB90066EF3A /* rpc.c++ */,
+				963BA9A618CD0CB90066EF3A /* rpc.capnp.c++ */,
+				963BA9A718CD0CB90066EF3A /* schema-loader.c++ */,
+				963BA9A918CD0CB90066EF3A /* schema.c++ */,
+				963BAAF718CD1F980066EF3A /* schema.capnp.c++ */,
+				963BA9AA18CD0CB90066EF3A /* serialize-async.c++ */,
+				963BA9AB18CD0CB90066EF3A /* serialize-packed.c++ */,
+				963BA9AC18CD0CB90066EF3A /* serialize.c++ */,
+				963BA9AD18CD0CB90066EF3A /* stringify.c++ */,
+			);
+			name = capnp;
+			path = "capnproto/c++/src/capnp";
+			sourceTree = "<group>";
+		};
+		963BA97918CD0C4F0066EF3A /* kj */ = {
+			isa = PBXGroup;
+			children = (
+				963BAA3718CD12F00066EF3A /* tests */,
+				963BA9FD18CD0CF90066EF3A /* parse */,
+				963BA9C518CD0CDD0066EF3A /* arena.h */,
+				963BA9C618CD0CDD0066EF3A /* array.h */,
+				963BA9C718CD0CDD0066EF3A /* async-inl.h */,
+				963BA9C818CD0CDD0066EF3A /* async-io.h */,
+				963BA9C918CD0CDD0066EF3A /* async-prelude.h */,
+				963BA9CA18CD0CDD0066EF3A /* async-unix.h */,
+				963BA9CB18CD0CDD0066EF3A /* async.h */,
+				963BA9CC18CD0CDD0066EF3A /* common.h */,
+				963BA9CD18CD0CDD0066EF3A /* debug.h */,
+				963BA9CE18CD0CDD0066EF3A /* exception.h */,
+				963BA9CF18CD0CDD0066EF3A /* function.h */,
+				963BA9D018CD0CDD0066EF3A /* io.h */,
+				963BA9D118CD0CDD0066EF3A /* main.h */,
+				963BA9D218CD0CDD0066EF3A /* memory.h */,
+				963BA9D318CD0CDD0066EF3A /* mutex.h */,
+				963BA9D418CD0CDD0066EF3A /* one-of.h */,
+				963BA9D518CD0CDD0066EF3A /* refcount.h */,
+				963BA9D618CD0CDD0066EF3A /* string-tree.h */,
+				963BA9D718CD0CDD0066EF3A /* string.h */,
+				963BA9D818CD0CDD0066EF3A /* thread.h */,
+				963BA9D918CD0CDD0066EF3A /* threadlocal.h */,
+				963BA9DA18CD0CDD0066EF3A /* tuple.h */,
+				963BA9DB18CD0CDD0066EF3A /* units.h */,
+				963BA9DC18CD0CDD0066EF3A /* vector.h */,
+				963BA9DD18CD0CF60066EF3A /* arena.c++ */,
+				963BA9DE18CD0CF60066EF3A /* array.c++ */,
+				963BA9DF18CD0CF60066EF3A /* async-io.c++ */,
+				963BA9E018CD0CF60066EF3A /* async-unix.c++ */,
+				963BA9E118CD0CF60066EF3A /* async.c++ */,
+				963BA9E218CD0CF60066EF3A /* common.c++ */,
+				963BA9E318CD0CF60066EF3A /* debug.c++ */,
+				963BA9E418CD0CF60066EF3A /* exception.c++ */,
+				963BA9E518CD0CF60066EF3A /* io.c++ */,
+				963BA9E618CD0CF60066EF3A /* main.c++ */,
+				963BA9E718CD0CF60066EF3A /* memory.c++ */,
+				963BA9E818CD0CF60066EF3A /* mutex.c++ */,
+				963BA9E918CD0CF60066EF3A /* refcount.c++ */,
+				963BA9EA18CD0CF60066EF3A /* string.c++ */,
+				963BAAB618CD1A890066EF3A /* string-tree.c++ */,
+				963BA9EB18CD0CF60066EF3A /* thread.c++ */,
+				963BA9EC18CD0CF60066EF3A /* units.c++ */,
+			);
+			name = kj;
+			path = "capnproto/c++/src/kj";
+			sourceTree = "<group>";
+		};
+		963BA9FD18CD0CF90066EF3A /* parse */ = {
+			isa = PBXGroup;
+			children = (
+				963BA9FE18CD0D0F0066EF3A /* char.h */,
+				963BA9FF18CD0D0F0066EF3A /* common.h */,
+				963BAA0018CD0D160066EF3A /* char.c++ */,
+			);
+			path = parse;
+			sourceTree = "<group>";
+		};
+		963BAA0318CD12980066EF3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				963BAA0F18CD12980066EF3A /* gtest.framework */,
+				963BAA1118CD12980066EF3A /* libgtest.a */,
+				963BAA1318CD12980066EF3A /* libgtest_main.a */,
+				963BAA1518CD12980066EF3A /* gtest_unittest-framework */,
+				963BAA1718CD12980066EF3A /* gtest_unittest */,
+				963BAA1918CD12980066EF3A /* sample1_unittest-framework */,
+				963BAA1B18CD12980066EF3A /* sample1_unittest-static */,
+				963BAAB418CD19900066EF3A /* libgtest-ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		963BAA3718CD12F00066EF3A /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				963BAA3818CD132E0066EF3A /* arena-test.c++ */,
+				963BAA3918CD132E0066EF3A /* array-test.c++ */,
+				963BAA3A18CD132E0066EF3A /* async-io-test.c++ */,
+				963BAA3B18CD132E0066EF3A /* async-test.c++ */,
+				963BAA3C18CD132E0066EF3A /* async-unix-test.c++ */,
+				963BAA3D18CD132E0066EF3A /* common-test.c++ */,
+				963BAA3E18CD132E0066EF3A /* debug-test.c++ */,
+				963BAA3F18CD132E0066EF3A /* exception-test.c++ */,
+				963BAA4018CD132E0066EF3A /* function-test.c++ */,
+				963BAA4118CD132E0066EF3A /* memory-test.c++ */,
+				963BAA4218CD132E0066EF3A /* mutex-test.c++ */,
+				963BAA4318CD132E0066EF3A /* one-of-test.c++ */,
+				963BAA4418CD132E0066EF3A /* refcount-test.c++ */,
+				963BAA4518CD132E0066EF3A /* string-test.c++ */,
+				963BAA4618CD132E0066EF3A /* string-tree-test.c++ */,
+				963BAA4718CD132E0066EF3A /* tuple-test.c++ */,
+				963BAA4818CD132E0066EF3A /* units-test.c++ */,
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
+		963BAA6118CD15560066EF3A /* capnprotoCxxTests */ = {
+			isa = PBXGroup;
+			children = (
+				963BAA6218CD15560066EF3A /* main.cpp */,
+				963BAA6418CD15560066EF3A /* capnprotoCxxTests.1 */,
+			);
+			path = capnprotoCxxTests;
+			sourceTree = "<group>";
+		};
+		963BAA7218CD174B0066EF3A /* capnprotoCxxTestsIos */ = {
+			isa = PBXGroup;
+			children = (
+				963BAA7B18CD174B0066EF3A /* AppDelegate.h */,
+				963BAA7C18CD174B0066EF3A /* AppDelegate.m */,
+				963BAA7E18CD174B0066EF3A /* Images.xcassets */,
+				963BAA7318CD174B0066EF3A /* Supporting Files */,
+			);
+			path = capnprotoCxxTestsIos;
+			sourceTree = "<group>";
+		};
+		963BAA7318CD174B0066EF3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				963BAA7418CD174B0066EF3A /* capnprotoCxxTestsIos-Info.plist */,
+				963BAA7518CD174B0066EF3A /* InfoPlist.strings */,
+				963BAA7818CD174B0066EF3A /* main.mm */,
+				963BAA7A18CD174B0066EF3A /* capnprotoCxxTestsIos-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		963BAAB818CD1AED0066EF3A /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				963BAAEB18CD1EA80066EF3A /* test-import.capnp.h */,
+				963BAAEC18CD1EA80066EF3A /* test-import2.capnp.h */,
+				963BAAE518CD1B520066EF3A /* test-util.h */,
+				963BAAE618CD1BB10066EF3A /* test.capnp.h */,
+				963BAAB918CD1B190066EF3A /* any-test.c++ */,
+				963BAABA18CD1B190066EF3A /* blob-test.c++ */,
+				963BAABB18CD1B190066EF3A /* capability-test.c++ */,
+				963BAABC18CD1B190066EF3A /* common-test.c++ */,
+				963BAABD18CD1B190066EF3A /* dynamic-test.c++ */,
+				963BAABE18CD1B190066EF3A /* encoding-test.c++ */,
+				963BAABF18CD1B190066EF3A /* endian-fallback-test.c++ */,
+				963BAAC018CD1B190066EF3A /* endian-reverse-test.c++ */,
+				963BAAC118CD1B190066EF3A /* endian-test.c++ */,
+				963BAAC218CD1B190066EF3A /* ez-rpc-test.c++ */,
+				963BAAC318CD1B190066EF3A /* layout-test.c++ */,
+				963BAAC418CD1B190066EF3A /* message-test.c++ */,
+				963BAAC518CD1B190066EF3A /* orphan-test.c++ */,
+				963BAAC618CD1B190066EF3A /* rpc-twoparty-test.c++ */,
+				963BAAC718CD1B190066EF3A /* schema-loader-test.c++ */,
+				963BAAC918CD1B190066EF3A /* schema-test.c++ */,
+				963BAACA18CD1B190066EF3A /* serialize-async-test.c++ */,
+				963BAACB18CD1B190066EF3A /* serialize-packed-test.c++ */,
+				963BAACC18CD1B190066EF3A /* serialize-test.c++ */,
+				963BAACD18CD1B190066EF3A /* stringify-test.c++ */,
+				963BAACE18CD1B190066EF3A /* test-util.c++ */,
+				963BAAE818CD1BC20066EF3A /* test.capnp.h */,
+				963BAAE918CD1BC20066EF3A /* test.capnp.c++ */,
+				963BAAED18CD1EB10066EF3A /* test-import.capnp.c++ */,
+				963BAAEE18CD1EB10066EF3A /* test-import2.capnp.c++ */,
+			);
+			name = tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +736,40 @@
 			productReference = 963BA95E18CD0B540066EF3A /* capnprotoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		963BAA5F18CD15560066EF3A /* capnprotoCxxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963BAA6618CD15560066EF3A /* Build configuration list for PBXNativeTarget "capnprotoCxxTests" */;
+			buildPhases = (
+				963BAA5C18CD15560066EF3A /* Sources */,
+				963BAA5D18CD15560066EF3A /* Frameworks */,
+				963BAA5E18CD15560066EF3A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = capnprotoCxxTests;
+			productName = capnprotoCxxTests;
+			productReference = 963BAA6018CD15560066EF3A /* capnprotoCxxTests */;
+			productType = "com.apple.product-type.tool";
+		};
+		963BAA6C18CD174B0066EF3A /* capnprotoCxxTestsIos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963BAA9218CD174B0066EF3A /* Build configuration list for PBXNativeTarget "capnprotoCxxTestsIos" */;
+			buildPhases = (
+				963BAA6918CD174B0066EF3A /* Sources */,
+				963BAA6A18CD174B0066EF3A /* Frameworks */,
+				963BAA6B18CD174B0066EF3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = capnprotoCxxTestsIos;
+			productName = capnprotoCxxTestsIos;
+			productReference = 963BAA6D18CD174B0066EF3A /* capnprotoCxxTestsIos.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,6 +778,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jason Choy";
+				TargetAttributes = {
+					963BA95D18CD0B540066EF3A = {
+						TestTargetID = 963BAA6C18CD174B0066EF3A;
+					};
+				};
 			};
 			buildConfigurationList = 963BA94918CD0B540066EF3A /* Build configuration list for PBXProject "capnproto" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -200,13 +794,80 @@
 			mainGroup = 963BA94518CD0B540066EF3A;
 			productRefGroup = 963BA94F18CD0B540066EF3A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 963BAA0318CD12980066EF3A /* Products */;
+					ProjectRef = 963BAA0218CD12980066EF3A /* gtest.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				963BA94D18CD0B540066EF3A /* capnproto */,
 				963BA95D18CD0B540066EF3A /* capnprotoTests */,
+				963BAA5F18CD15560066EF3A /* capnprotoCxxTests */,
+				963BAA6C18CD174B0066EF3A /* capnprotoCxxTestsIos */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		963BAA0F18CD12980066EF3A /* gtest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = gtest.framework;
+			remoteRef = 963BAA0E18CD12980066EF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		963BAA1118CD12980066EF3A /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = 963BAA1018CD12980066EF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		963BAA1318CD12980066EF3A /* libgtest_main.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest_main.a;
+			remoteRef = 963BAA1218CD12980066EF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		963BAA1518CD12980066EF3A /* gtest_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "gtest_unittest-framework";
+			remoteRef = 963BAA1418CD12980066EF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		963BAA1718CD12980066EF3A /* gtest_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = gtest_unittest;
+			remoteRef = 963BAA1618CD12980066EF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		963BAA1918CD12980066EF3A /* sample1_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-framework";
+			remoteRef = 963BAA1818CD12980066EF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		963BAA1B18CD12980066EF3A /* sample1_unittest-static */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-static";
+			remoteRef = 963BAA1A18CD12980066EF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		963BAAB418CD19900066EF3A /* libgtest-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libgtest-ios.a";
+			remoteRef = 963BAAB318CD19900066EF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		963BA95C18CD0B540066EF3A /* Resources */ = {
@@ -217,6 +878,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		963BAA6B18CD174B0066EF3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963BAA7718CD174B0066EF3A /* InfoPlist.strings in Resources */,
+				963BAA7F18CD174B0066EF3A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -224,7 +894,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963BA95918CD0B540066EF3A /* capnproto.m in Sources */,
+				963BA9B818CD0CB90066EF3A /* message.c++ in Sources */,
+				963BA9EE18CD0CF60066EF3A /* array.c++ in Sources */,
+				963BA9AE18CD0CB90066EF3A /* any.c++ in Sources */,
+				963BA9C318CD0CB90066EF3A /* serialize.c++ in Sources */,
+				963BA9B118CD0CB90066EF3A /* c++.capnp.c++ in Sources */,
+				963BA9F518CD0CF60066EF3A /* io.c++ in Sources */,
+				963BA9C218CD0CB90066EF3A /* serialize-packed.c++ in Sources */,
+				963BA9BC18CD0CB90066EF3A /* rpc.c++ in Sources */,
+				963BA9F418CD0CF60066EF3A /* exception.c++ in Sources */,
+				963BA9B618CD0CB90066EF3A /* layout.c++ in Sources */,
+				963BA9F218CD0CF60066EF3A /* common.c++ in Sources */,
+				963BA9ED18CD0CF60066EF3A /* arena.c++ in Sources */,
+				963BA9FC18CD0CF60066EF3A /* units.c++ in Sources */,
+				963BA9B518CD0CB90066EF3A /* ez-rpc.c++ in Sources */,
+				963BA9F918CD0CF60066EF3A /* refcount.c++ in Sources */,
+				963BA9AF18CD0CB90066EF3A /* arena.c++ in Sources */,
+				963BA9FB18CD0CF60066EF3A /* thread.c++ in Sources */,
+				963BAAB718CD1A890066EF3A /* string-tree.c++ in Sources */,
+				963BA9F318CD0CF60066EF3A /* debug.c++ in Sources */,
+				963BA9B318CD0CB90066EF3A /* dynamic-capability.c++ in Sources */,
+				963BA9C418CD0CB90066EF3A /* stringify.c++ in Sources */,
+				963BA9FA18CD0CF60066EF3A /* string.c++ in Sources */,
+				963BA9F118CD0CF60066EF3A /* async.c++ in Sources */,
+				963BA9C018CD0CB90066EF3A /* schema.c++ in Sources */,
+				963BA9BB18CD0CB90066EF3A /* rpc-twoparty.capnp.c++ in Sources */,
+				963BA9F018CD0CF60066EF3A /* async-unix.c++ in Sources */,
+				963BA9EF18CD0CF60066EF3A /* async-io.c++ in Sources */,
+				963BA9BD18CD0CB90066EF3A /* rpc.capnp.c++ in Sources */,
+				963BA9BA18CD0CB90066EF3A /* rpc-twoparty.c++ in Sources */,
+				963BAA0118CD0D160066EF3A /* char.c++ in Sources */,
+				963BA9F818CD0CF60066EF3A /* mutex.c++ in Sources */,
+				963BA9C118CD0CB90066EF3A /* serialize-async.c++ in Sources */,
+				963BA9B418CD0CB90066EF3A /* dynamic.c++ in Sources */,
+				963BA9BE18CD0CB90066EF3A /* schema-loader.c++ in Sources */,
+				963BA9F718CD0CF60066EF3A /* memory.c++ in Sources */,
+				963BA9B218CD0CB90066EF3A /* capability.c++ in Sources */,
+				963BAAF818CD1F980066EF3A /* schema.capnp.c++ in Sources */,
+				963BA9B018CD0CB90066EF3A /* blob.c++ in Sources */,
+				963BA9B718CD0CB90066EF3A /* list.c++ in Sources */,
+				963BA9F618CD0CF60066EF3A /* main.c++ in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +942,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				963BA96E18CD0B540066EF3A /* capnprotoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963BAA5C18CD15560066EF3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963BAA6318CD15560066EF3A /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963BAA6918CD174B0066EF3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963BAACF18CD1B190066EF3A /* any-test.c++ in Sources */,
+				963BAAD318CD1B190066EF3A /* dynamic-test.c++ in Sources */,
+				963BAA9818CD19270066EF3A /* arena-test.c++ in Sources */,
+				963BAAF018CD1EB10066EF3A /* test-import2.capnp.c++ in Sources */,
+				963BAAEA18CD1BC20066EF3A /* test.capnp.c++ in Sources */,
+				963BAA9918CD19270066EF3A /* array-test.c++ in Sources */,
+				963BAADF18CD1B190066EF3A /* schema-test.c++ in Sources */,
+				963BAA9A18CD19270066EF3A /* async-io-test.c++ in Sources */,
+				963BAAE118CD1B190066EF3A /* serialize-packed-test.c++ in Sources */,
+				963BAAD918CD1B190066EF3A /* layout-test.c++ in Sources */,
+				963BAAD218CD1B190066EF3A /* common-test.c++ in Sources */,
+				963BAA9B18CD19270066EF3A /* async-test.c++ in Sources */,
+				963BAAD618CD1B190066EF3A /* endian-reverse-test.c++ in Sources */,
+				963BAA9C18CD19270066EF3A /* async-unix-test.c++ in Sources */,
+				963BAA9D18CD19270066EF3A /* common-test.c++ in Sources */,
+				963BAADB18CD1B190066EF3A /* orphan-test.c++ in Sources */,
+				963BAA9E18CD19270066EF3A /* debug-test.c++ in Sources */,
+				963BAAD018CD1B190066EF3A /* blob-test.c++ in Sources */,
+				963BAA9F18CD19270066EF3A /* exception-test.c++ in Sources */,
+				963BAAA018CD19270066EF3A /* function-test.c++ in Sources */,
+				963BAAD718CD1B190066EF3A /* endian-test.c++ in Sources */,
+				963BAAA118CD19270066EF3A /* memory-test.c++ in Sources */,
+				963BAAA218CD19270066EF3A /* mutex-test.c++ in Sources */,
+				963BAAA318CD19270066EF3A /* one-of-test.c++ in Sources */,
+				963BAAD518CD1B190066EF3A /* endian-fallback-test.c++ in Sources */,
+				963BAAE418CD1B190066EF3A /* test-util.c++ in Sources */,
+				963BAAA418CD19270066EF3A /* refcount-test.c++ in Sources */,
+				963BAAA518CD19270066EF3A /* string-test.c++ in Sources */,
+				963BAAA618CD19270066EF3A /* string-tree-test.c++ in Sources */,
+				963BAAE018CD1B190066EF3A /* serialize-async-test.c++ in Sources */,
+				963BAAD818CD1B190066EF3A /* ez-rpc-test.c++ in Sources */,
+				963BAAD118CD1B190066EF3A /* capability-test.c++ in Sources */,
+				963BAAA718CD19270066EF3A /* tuple-test.c++ in Sources */,
+				963BAAD418CD1B190066EF3A /* encoding-test.c++ in Sources */,
+				963BAADC18CD1B190066EF3A /* rpc-twoparty-test.c++ in Sources */,
+				963BAAA818CD19270066EF3A /* units-test.c++ in Sources */,
+				963BAA7D18CD174B0066EF3A /* AppDelegate.m in Sources */,
+				963BAAE218CD1B190066EF3A /* serialize-test.c++ in Sources */,
+				963BAADA18CD1B190066EF3A /* message-test.c++ in Sources */,
+				963BAAE318CD1B190066EF3A /* stringify-test.c++ in Sources */,
+				963BAA7918CD174B0066EF3A /* main.mm in Sources */,
+				963BAADD18CD1B190066EF3A /* schema-loader-test.c++ in Sources */,
+				963BAAEF18CD1EB10066EF3A /* test-import.capnp.c++ in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +1018,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				963BA96B18CD0B540066EF3A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		963BAA7518CD174B0066EF3A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				963BAA7618CD174B0066EF3A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -290,8 +1065,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"capnproto/c++/src",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DKJ_USE_PTHREAD_TLS",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -322,7 +1106,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"capnproto/c++/src",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DKJ_USE_PTHREAD_TLS",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -333,7 +1126,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/capnproto.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "capnproto/capnproto-Prefix.pch";
+				GCC_PREFIX_HEADER = "src/capnproto-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -345,7 +1138,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/capnproto.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "capnproto/capnproto-Prefix.pch";
+				GCC_PREFIX_HEADER = "src/capnproto-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -356,6 +1149,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/capnprotoCxxTestsIos.app/capnprotoCxxTestsIos";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -369,6 +1163,7 @@
 				);
 				INFOPLIST_FILE = "capnprotoTests/capnprotoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -377,6 +1172,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/capnprotoCxxTestsIos.app/capnprotoCxxTestsIos";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -386,7 +1182,91 @@
 				GCC_PREFIX_HEADER = "capnproto/capnproto-Prefix.pch";
 				INFOPLIST_FILE = "capnprotoTests/capnprotoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		963BAA6718CD15560066EF3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		963BAA6818CD15560066EF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		963BAA9318CD174B0066EF3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "capnprotoCxxTestsIos/capnprotoCxxTestsIos-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"capnproto/c++/src",
+					"capnproto/c++/gtest/include",
+				);
+				INFOPLIST_FILE = "capnprotoCxxTestsIos/capnprotoCxxTestsIos-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		963BAA9418CD174B0066EF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "capnprotoCxxTestsIos/capnprotoCxxTestsIos-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"capnproto/c++/src",
+					"capnproto/c++/gtest/include",
+				);
+				INFOPLIST_FILE = "capnprotoCxxTestsIos/capnprotoCxxTestsIos-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -409,6 +1289,7 @@
 				963BA97318CD0B540066EF3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		963BA97418CD0B540066EF3A /* Build configuration list for PBXNativeTarget "capnprotoTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +1298,25 @@
 				963BA97618CD0B540066EF3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		963BAA6618CD15560066EF3A /* Build configuration list for PBXNativeTarget "capnprotoCxxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963BAA6718CD15560066EF3A /* Debug */,
+				963BAA6818CD15560066EF3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		963BAA9218CD174B0066EF3A /* Build configuration list for PBXNativeTarget "capnprotoCxxTestsIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963BAA9318CD174B0066EF3A /* Debug */,
+				963BAA9418CD174B0066EF3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

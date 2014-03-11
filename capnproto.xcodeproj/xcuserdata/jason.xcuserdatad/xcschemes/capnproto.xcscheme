@@ -38,6 +38,16 @@
                ReferencedContainer = "container:capnproto.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "963BAA8318CD174B0066EF3A"
+               BuildableName = "capnprotoCxxTestsIosTests.xctest"
+               BlueprintName = "capnprotoCxxTestsIosTests"
+               ReferencedContainer = "container:capnproto.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
