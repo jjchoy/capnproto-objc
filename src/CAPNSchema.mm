@@ -7,6 +7,7 @@
 //
 
 #import "CAPNSchema.h"
+#import "CAPNDynamic.h"
 
 #include <utility>
 
@@ -34,7 +35,27 @@
 
 @end
 
+@interface CAPNStructSchemaFieldSubset ()
+
+@property (readonly) capnp::StructSchema::FieldSubset fieldSubset;
+
+@end
+
 @interface CAPNEnumSchema ()
+
+@property (readonly) capnp::EnumSchema schema;
+
+@end
+
+@interface CAPNEnumerant ()
+
+@property (readonly) capnp::EnumSchema::Enumerant enumerant;
+
+@end
+
+@interface CAPNEnumerantList ()
+
+@property (readonly) capnp::EnumSchema::EnumerantList enumerantList;
 
 @end
 
@@ -43,6 +64,8 @@
 @end
 
 @interface CAPNConstSchema ()
+
+@property (readonly) capnp::ConstSchema schema;
 
 @end
 
@@ -151,11 +174,118 @@
 }
 
 - (NSUInteger)count {
-    return static_cast<NSUInteger>(self.fieldList.size());
+    return self.fieldList.size();
 }
 
 - (id)objectAtIndexedSubscript:(NSUInteger)index {
     return [[CAPNStructSchemaField alloc] initWithField:self.fieldList[index]];
+}
+
+@end
+
+@implementation CAPNStructSchemaFieldSubset
+
+- (id)initWithFieldSubset:(capnp::StructSchema::FieldSubset &&)fieldSubset {
+    self = [super init];
+    if (self) {
+        _fieldSubset = std::move(fieldSubset);
+    }
+    return self;
+}
+
+- (NSUInteger)count {
+    return self.fieldSubset.size();
+}
+
+- (id)objectAtIndexedSubscript:(NSUInteger)index {
+    return [[CAPNStructSchemaField alloc] initWithField:self.fieldSubset[index]];
+}
+
+@end
+
+@implementation CAPNEnumSchema
+
+- (id)initWithSchema:(capnp::EnumSchema &&)schema {
+    self = [super init];
+    if (self) {
+        _schema = std::move(schema);
+    }
+    return self;
+}
+
+- (CAPNEnumerantList *)enumerants {
+    return [[CAPNEnumerantList alloc] initWithEnumerantList:self.schema.getEnumerants()];
+}
+
+- (CAPNEnumerant *)findEnumerantByName:(NSString *)name {
+    KJ_IF_MAYBE(enumerant, self.schema.findEnumerantByName(kj::StringPtr([name UTF8String], [name lengthOfBytesUsingEncoding:NSUTF8StringEncoding]))) {
+        return [[CAPNEnumerant alloc] initWithEnumerant:std::move(*enumerant)];
+    }
+    return nil;
+}
+
+@end
+
+@implementation CAPNEnumerant
+
+- (id)initWithEnumerant:(capnp::EnumSchema::Enumerant &&)enumerant {
+    self = [super init];
+    if (self) {
+        _enumerant = std::move(enumerant);
+    }
+    return self;
+}
+
+- (CAPNEnumSchema *)containingEnum {
+    return [[CAPNEnumSchema alloc] initWithSchema:self.enumerant.getContainingEnum()];
+}
+
+- (uint16_t)ordinal {
+    return self.enumerant.getOrdinal();
+}
+
+- (NSUInteger)index {
+    return self.enumerant.getIndex();
+}
+
+@end
+
+@implementation CAPNEnumerantList
+
+- (id)initWithEnumerantList:(capnp::EnumSchema::EnumerantList &&)enumerantList {
+    self = [super init];
+    if (self) {
+        _enumerantList = std::move(enumerantList);
+    }
+    return self;
+}
+
+- (NSUInteger)count {
+    return self.enumerantList.size();
+}
+
+- (id)objectAtIndexedSubscript:(NSUInteger)index {
+    return [[CAPNEnumerant alloc] initWithEnumerant:self.enumerantList[index]];
+}
+
+@end
+
+@implementation CAPNConstSchema
+
+- (id)initWithSchema:(capnp::ConstSchema &&)schema {
+    self = [super init];
+    if (self) {
+        _schema = std::move(schema);
+    }
+    return self;
+}
+
+- (CAPNDynamicValueReader *)value {
+    return [[CAPNDynamicValueReader alloc] initWithReader:self.schema.as<capnp::DynamicValue>()];
+}
+
+- (uint32_t)valueSchemaOffset {
+    return self.schema.getValueSchemaOffset();
 }
 
 @end

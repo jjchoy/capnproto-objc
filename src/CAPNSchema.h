@@ -14,14 +14,21 @@
 
 #endif
 
+@class CAPNDynamicValueReader;
+
 @class CAPNStructSchema;
 @class CAPNStructSchemaField;
 @class CAPNStructSchemaFieldList;
 @class CAPNStructSchemaFieldSubset;
 
 @class CAPNEnumSchema;
+@class CAPNEnumerant;
+@class CAPNEnumerantList;
+
 @class CAPNInterfaceSchema;
 @class CAPNConstSchema;
+
+@class CAPNListSchema;
 
 @interface CAPNSchema : NSObject
 
@@ -92,6 +99,9 @@
 
 #endif
 
+@property (readonly) NSUInteger count;
+- (id)objectAtIndexedSubscript:(NSUInteger)index;
+
 @end
 
 @interface CAPNEnumSchema : NSObject
@@ -102,9 +112,41 @@
 
 #endif
 
+@property (readonly) CAPNEnumerantList *enumerants;
+- (CAPNEnumerant *)findEnumerantByName:(NSString *)name;
+
+@end
+
+@interface CAPNEnumerant : NSObject
+
+#ifdef __cplusplus
+
+- (id)initWithEnumerant:(capnp::EnumSchema::Enumerant&&)enumerant;
+
+#endif
+
+@property (readonly) CAPNEnumSchema *containingEnum;
+@property (readonly) uint16_t ordinal;
+@property (readonly) NSUInteger index;
+
+@end
+
+@interface CAPNEnumerantList : NSObject
+
+#ifdef __cplusplus
+
+- (id)initWithEnumerantList:(capnp::EnumSchema::EnumerantList&&)enumerantList;
+
+#endif
+
+- (NSUInteger)count;
+- (id)objectAtIndexedSubscript:(NSUInteger)index;
+
 @end
 
 @interface CAPNInterfaceSchema : NSObject
+
+// Not Yet Implemented
 
 #ifdef __cplusplus
 
@@ -121,5 +163,20 @@
 - (id)initWithSchema:(capnp::ConstSchema&&)schema;
 
 #endif
+
+@property (readonly) CAPNDynamicValueReader *value;
+@property (readonly) uint32_t valueSchemaOffset;
+
+@end
+
+@interface CAPNListSchema : NSObject
+
+#ifdef __cplusplus
+
+- (id)initWithSchema:(capnp::ListSchema&&)schema;
+
+#endif
+
+// TODO
 
 @end
