@@ -12,6 +12,8 @@
 #import "CAPNSchema.h"
 
 #ifdef __cplusplus
+#include <kj/memory.h>
+
 namespace capnp {
     class MessageBuilder;
 }
@@ -35,7 +37,7 @@ typedef NS_ENUM(uint8_t, CAPNAllocationStrategy) {
 
 #ifdef __cplusplus
 
-- (id)initWithMessageBuilder:(capnp::MessageBuilder *)messageBuilder;
+- (id)initWithMessageBuilder:(kj::Own<capnp::MessageBuilder>&&)messageBuilder;
 
 #endif
 

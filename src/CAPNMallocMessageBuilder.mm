@@ -9,31 +9,37 @@
 #import "CAPNMallocMessageBuilder.h"
 
 #include <capnp/message.h>
+#include <kj/memory.h>
+#include <utility>
+
+@interface CAPNMallocMessageBuilder ()
+
+@end
 
 @implementation CAPNMallocMessageBuilder
 
 - (id)init {
-    try {
-        self = [super initWithMessageBuilder:(new capnp::MallocMessageBuilder)];
-    } catch (...) {
-        self = nil;
+    kj::Own<capnp::MessageBuilder> messagebuilder(new capnp::MallocMessageBuilder, kj::DestructorOnlyDisposer<capnp::MallocMessageBuilder>::instance);
+    self = [super initWithMessageBuilder:std::move(messagebuilder)];
+    if (self) {
+
     }
     return self;
 }
 
 - (id)initWithFirstSegmentWords:(NSUInteger)firstSegmentWords {
-    try {
-        self = [super initWithMessageBuilder:(new capnp::MallocMessageBuilder(static_cast<uint>(firstSegmentWords)))];
-    } catch (...) {
-        self = nil;
+    kj::Own<capnp::MessageBuilder> messagebuilder(new capnp::MallocMessageBuilder(firstSegmentWords), kj::DestructorOnlyDisposer<capnp::MallocMessageBuilder>::instance);
+    self = [super initWithMessageBuilder:std::move(messagebuilder)];
+    if (self) {
+        
     }
     return self;
 }
 - (id)initWithFirstSegmentWords:(NSUInteger)firstSegmentWords allocationStrategy:(CAPNAllocationStrategy)allocationStrategy {
-    try {
-        self = [super initWithMessageBuilder:(new capnp::MallocMessageBuilder(static_cast<uint>(firstSegmentWords), static_cast<capnp::AllocationStrategy>(allocationStrategy)))];
-    } catch (...) {
-        self = nil;
+    kj::Own<capnp::MessageBuilder> messagebuilder(new capnp::MallocMessageBuilder(firstSegmentWords, static_cast<capnp::AllocationStrategy>(allocationStrategy)), kj::DestructorOnlyDisposer<capnp::MallocMessageBuilder>::instance);
+    self = [super initWithMessageBuilder:std::move(messagebuilder)];
+    if (self) {
+        
     }
     return self;
 }

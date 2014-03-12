@@ -9,32 +9,34 @@
 #import "CAPNMessageBuilder.h"
 #include <capnp/message.h>
 
-@interface CAPNMessageBuilderBase ()
+#include <utility>
 
-@property (readonly) capnp::MessageBuilder *messageBuilder;
+@interface CAPNMessageBuilderBase () {
+    kj::Own<capnp::MessageBuilder> _messageBuilder;
+}
 
 @end
 
 @implementation CAPNMessageBuilderBase
 
-- (id)initWithMessageBuilder:(capnp::MessageBuilder *)messageBuilder {
+- (id)initWithMessageBuilder:(kj::Own<capnp::MessageBuilder>&&)messageBuilder {
     self = [super init];
     if (self) {
-        _messageBuilder = messageBuilder;
+        _messageBuilder = std::move(messageBuilder);
     }
     return self;
 }
 
 - (CAPNDynamicStructBuilder *)initialiseRootDynamicStruct:(CAPNStructSchema *)schema {
-    return [[CAPNDynamicStructBuilder alloc] initWithBuilder:self.messageBuilder->initRoot<capnp::DynamicStruct>(schema.schema)];
+    return [[CAPNDynamicStructBuilder alloc] initWithBuilder:_messageBuilder->initRoot<capnp::DynamicStruct>(schema.schema)];
 }
 
 - (void)setRootFromDynamicStruct:(CAPNDynamicStructReader *)value {
-    self.messageBuilder->setRoot(value.reader);
+    _messageBuilder->setRoot(value.reader);
 }
 
 - (CAPNDynamicStructBuilder *)getRootAsDynamicStruct:(CAPNStructSchema *)schema {
-    return [[CAPNDynamicStructBuilder alloc] initWithBuilder:self.messageBuilder->getRoot<capnp::DynamicStruct>(schema.schema)];
+    return [[CAPNDynamicStructBuilder alloc] initWithBuilder:_messageBuilder->getRoot<capnp::DynamicStruct>(schema.schema)];
 }
 
 @end
