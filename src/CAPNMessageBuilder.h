@@ -1,5 +1,5 @@
 //
-//  CAPNMessageBuilder.h
+//  CAPNMallocMessageBuilderBase.h
 //  capnproto
 //
 //  Created by Jason Choy on 11/03/2014.
@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@class CAPNBuilder;
-@class CAPNReader;
+#import "CAPNDynamic.h"
+#import "CAPNSchema.h"
+
+#ifdef __cplusplus
+namespace capnp {
+    class MessageBuilder;
+}
+#endif
 
 typedef NS_ENUM(uint8_t, CAPNAllocationStrategy) {
     CAPNAllocationStrategyFixedSize,
@@ -19,9 +25,18 @@ typedef NS_ENUM(uint8_t, CAPNAllocationStrategy) {
 @protocol CAPNMessageBuilder <NSObject>
 
 // TODO needs type info
-- (id)initialiseRoot;
-- (void)setRoot:(CAPNReader *)value;
-- (id)getRoot;
+- (CAPNDynamicStructBuilder *)initialiseRootDynamicStruct:(CAPNStructSchema *)schema;
+- (void)setRootFromDynamicStruct:(CAPNDynamicStructReader *)value;
+- (CAPNDynamicStructBuilder *)getRootAsDynamicStruct:(CAPNStructSchema *)schema;
 
+@end
+
+@interface CAPNMessageBuilderBase : NSObject <CAPNMessageBuilder>
+
+#ifdef __cplusplus
+
+- (id)initWithMessageBuilder:(capnp::MessageBuilder *)messageBuilder;
+
+#endif
 
 @end

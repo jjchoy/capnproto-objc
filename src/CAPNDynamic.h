@@ -112,6 +112,7 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 #ifdef __cplusplus
 
 - (id)initWithReader:(capnp::DynamicStruct::Reader&&)reader;
+@property (readonly) capnp::DynamicStruct::Reader reader;
 
 #endif
 

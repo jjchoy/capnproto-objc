@@ -58,6 +58,8 @@ typedef NS_ENUM(NSUInteger, CAPNSchemaType) {
 
 - (id)initWithSchema:(capnp::Schema&&)schema;
 
+@property (readonly) capnp::Schema schema;
+
 #endif
 
 - (CAPNSchema *)getDependency:(uint64_t)dependencyId;
@@ -74,6 +76,8 @@ typedef NS_ENUM(NSUInteger, CAPNSchemaType) {
 #ifdef __cplusplus
 
 - (id)initWithSchema:(capnp::StructSchema&&)schema;
+
+@property (readonly) capnp::StructSchema schema;
 
 #endif
 

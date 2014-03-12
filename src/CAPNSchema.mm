@@ -13,13 +13,9 @@
 
 @interface CAPNSchema ()
 
-@property (readonly) capnp::Schema schema;
-
 @end
 
 @interface CAPNStructSchema ()
-
-@property (readonly) capnp::StructSchema schema;
 
 @end
 
@@ -285,7 +281,7 @@
 }
 
 - (CAPNDynamicValueReader *)value {
-    return [[CAPNDynamicValueReader alloc] initWithReader:self.schema.as<capnp::DynamicValue>()];
+    return [[CAPNDynamicValueReader alloc] initWithReader:capnp::DynamicValue::Reader(self.schema)];
 }
 
 - (uint32_t)valueSchemaOffset {

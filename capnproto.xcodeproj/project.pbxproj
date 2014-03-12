@@ -107,7 +107,7 @@
 		963BAAF818CD1F980066EF3A /* schema.capnp.c++ in Sources */ = {isa = PBXBuildFile; fileRef = 963BAAF718CD1F980066EF3A /* schema.capnp.c++ */; };
 		9679BF0B18CFB1D30003F172 /* CAPNMallocMessageBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9679BF0A18CFB1D30003F172 /* CAPNMallocMessageBuilder.mm */; };
 		9679BF0E18CFB7710003F172 /* CAPNAnyPointer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9679BF0D18CFB7710003F172 /* CAPNAnyPointer.mm */; };
-		9679BF1118CFBA2F0003F172 /* CAPNMessageBuilderBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9679BF1018CFBA2F0003F172 /* CAPNMessageBuilderBase.mm */; };
+		9679BF1118CFBA2F0003F172 /* CAPNMessageBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9679BF1018CFBA2F0003F172 /* CAPNMessageBuilder.mm */; };
 		9679BF1418CFC1610003F172 /* CAPNDynamic.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9679BF1318CFC1610003F172 /* CAPNDynamic.mm */; };
 		9679BF1718CFD7C20003F172 /* CAPNSchema.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9679BF1618CFD7C20003F172 /* CAPNSchema.mm */; };
 		9679BF1A18CFFCE80003F172 /* CAPNCommon.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9679BF1918CFFCE80003F172 /* CAPNCommon.mm */; };
@@ -364,13 +364,12 @@
 		963BAAED18CD1EB10066EF3A /* test-import.capnp.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-import.capnp.c++"; sourceTree = "<group>"; };
 		963BAAEE18CD1EB10066EF3A /* test-import2.capnp.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-import2.capnp.c++"; sourceTree = "<group>"; };
 		963BAAF718CD1F980066EF3A /* schema.capnp.c++ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "schema.capnp.c++"; sourceTree = "<group>"; };
-		9679BF0818CFAF980003F172 /* CAPNMessageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPNMessageBuilder.h; sourceTree = "<group>"; };
 		9679BF0918CFB1D30003F172 /* CAPNMallocMessageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPNMallocMessageBuilder.h; sourceTree = "<group>"; };
 		9679BF0A18CFB1D30003F172 /* CAPNMallocMessageBuilder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAPNMallocMessageBuilder.mm; sourceTree = "<group>"; };
 		9679BF0C18CFB7710003F172 /* CAPNAnyPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPNAnyPointer.h; sourceTree = "<group>"; };
 		9679BF0D18CFB7710003F172 /* CAPNAnyPointer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAPNAnyPointer.mm; sourceTree = "<group>"; };
-		9679BF0F18CFBA2F0003F172 /* CAPNMessageBuilderBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPNMessageBuilderBase.h; sourceTree = "<group>"; };
-		9679BF1018CFBA2F0003F172 /* CAPNMessageBuilderBase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAPNMessageBuilderBase.mm; sourceTree = "<group>"; };
+		9679BF0F18CFBA2F0003F172 /* CAPNMessageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPNMessageBuilder.h; sourceTree = "<group>"; };
+		9679BF1018CFBA2F0003F172 /* CAPNMessageBuilder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAPNMessageBuilder.mm; sourceTree = "<group>"; };
 		9679BF1218CFC1610003F172 /* CAPNDynamic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPNDynamic.h; sourceTree = "<group>"; };
 		9679BF1318CFC1610003F172 /* CAPNDynamic.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAPNDynamic.mm; sourceTree = "<group>"; };
 		9679BF1518CFD7C20003F172 /* CAPNSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPNSchema.h; sourceTree = "<group>"; };
@@ -488,9 +487,8 @@
 			isa = PBXGroup;
 			children = (
 				963BA95418CD0B540066EF3A /* Supporting Files */,
-				9679BF0818CFAF980003F172 /* CAPNMessageBuilder.h */,
-				9679BF0F18CFBA2F0003F172 /* CAPNMessageBuilderBase.h */,
-				9679BF1018CFBA2F0003F172 /* CAPNMessageBuilderBase.mm */,
+				9679BF0F18CFBA2F0003F172 /* CAPNMessageBuilder.h */,
+				9679BF1018CFBA2F0003F172 /* CAPNMessageBuilder.mm */,
 				9679BF0918CFB1D30003F172 /* CAPNMallocMessageBuilder.h */,
 				9679BF0A18CFB1D30003F172 /* CAPNMallocMessageBuilder.mm */,
 				9679BF0C18CFB7710003F172 /* CAPNAnyPointer.h */,
@@ -936,7 +934,7 @@
 				963BA9F518CD0CF60066EF3A /* io.c++ in Sources */,
 				963BA9C218CD0CB90066EF3A /* serialize-packed.c++ in Sources */,
 				963BA9BC18CD0CB90066EF3A /* rpc.c++ in Sources */,
-				9679BF1118CFBA2F0003F172 /* CAPNMessageBuilderBase.mm in Sources */,
+				9679BF1118CFBA2F0003F172 /* CAPNMessageBuilder.mm in Sources */,
 				963BA9F418CD0CF60066EF3A /* exception.c++ in Sources */,
 				963BA9B618CD0CB90066EF3A /* layout.c++ in Sources */,
 				963BA9F218CD0CF60066EF3A /* common.c++ in Sources */,

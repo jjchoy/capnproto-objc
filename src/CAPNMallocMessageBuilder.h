@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "CAPNMessageBuilderBase.h"
+#import "CAPNMessageBuilder.h"
 
 @interface CAPNMallocMessageBuilder : CAPNMessageBuilderBase
 

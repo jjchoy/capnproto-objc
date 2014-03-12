@@ -30,8 +30,6 @@
 
 @interface CAPNDynamicStructReader ()
 
-@property (readonly) capnp::DynamicStruct::Reader reader;
-
 @end
 
 @interface CAPNDynamicStructBuilder ()
@@ -116,21 +114,21 @@
 }
 
 - (CAPNDynamicStructReader *)structValue {
-    return [[CAPNDynamicStructReader alloc] initWithReader:self.reader.as<capnp::DynamicStruct::Reader>()];
+    return [[CAPNDynamicStructReader alloc] initWithReader:self.reader.as<capnp::DynamicStruct>()];
 }
 
 - (CAPNDynamicListReader *)listValue {
-    return [[CAPNDynamicListReader alloc] initWithReader:self.reader.as<capnp::DynamicList::Reader>()];
+    return [[CAPNDynamicListReader alloc] initWithReader:self.reader.as<capnp::DynamicList>()];
 }
 
 @end
 
 @implementation CAPNDynamicValueBuilder
 
-- (id)initWithBuilder:(capnp::DynamicValue::Builder *)builder {
+- (id)initWithBuilder:(capnp::DynamicValue::Builder&&)builder {
     self = [super init];
     if (self) {
-        _builder = *builder;
+        _builder = std::move(builder);
     }
     return self;
 }
@@ -232,11 +230,11 @@
 }
 
 - (CAPNDynamicStructBuilder *)structValue {
-    return [[CAPNDynamicStructBuilder alloc] initWithBuilder:self.builder.as<capnp::DynamicStruct::Builder>()];
+    return [[CAPNDynamicStructBuilder alloc] initWithBuilder:self.builder.as<capnp::DynamicStruct>()];
 }
 
 - (CAPNDynamicListBuilder *)listValue {
-    return [[CAPNDynamicListBuilder alloc] initWithBuilder:self.builder.as<capnp::DynamicList::Builder>()];
+    return [[CAPNDynamicListBuilder alloc] initWithBuilder:self.builder.as<capnp::DynamicList>()];
 }
 
 @end
