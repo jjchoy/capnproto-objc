@@ -40,11 +40,9 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 
 #ifdef __cplusplus
 
-- (id)initWithReader:(capnp::DynamicValue::Reader *)reader;
+- (id)initWithReader:(capnp::DynamicValue::Reader&&)reader;
 
 #endif
-
-- (void)dealloc;
 
 @property (readonly) CAPNDynamicValueType type;
 
@@ -69,11 +67,9 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 
 #ifdef __cplusplus
 
-- (id)initWithReader:(capnp::DynamicValue::Builder *)builder;
+- (id)initWithReader:(capnp::DynamicValue::Builder&&)builder;
 
 #endif
-
-- (void)dealloc;
 
 @property (readonly) CAPNDynamicValueType type;
 
@@ -98,11 +94,11 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 
 #ifdef __cplusplus
 
-- (id)initWithEnum:(capnp::DynamicEnum *)dynamicEnum;
+- (id)initWithEnum:(capnp::DynamicEnum&&)dynamicEnum;
 
 #endif
 
-- (void)dealloc;
+@property (readonly) uint16_t rawValue;
 
 @end
 
@@ -110,11 +106,9 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 
 #ifdef __cplusplus
 
-- (id)initWithReader:(capnp::DynamicStruct::Reader *)reader;
+- (id)initWithReader:(capnp::DynamicStruct::Reader&&)reader;
 
 #endif
-
-- (void)dealloc;
 
 @end
 
@@ -122,11 +116,9 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 
 #ifdef __cplusplus
 
-- (id)initWithBuilder:(capnp::DynamicStruct::Builder *)builder;
+- (id)initWithBuilder:(capnp::DynamicStruct::Builder&&)builder;
 
 #endif
-
-- (void)dealloc;
 
 @end
 
@@ -134,11 +126,9 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 
 #ifdef __cplusplus
 
-- (id)initWithReader:(capnp::DynamicList::Reader *)reader;
+- (id)initWithReader:(capnp::DynamicList::Reader&&)reader;
 
 #endif
-
-- (void)dealloc;
 
 @end
 
@@ -146,10 +136,8 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 
 #ifdef __cplusplus
 
-- (id)initWithBuilder:(capnp::DynamicList::Builder *)builder;
+- (id)initWithBuilder:(capnp::DynamicList::Builder&&)builder;
 
 #endif
-
-- (void)dealloc;
 
 @end
