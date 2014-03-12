@@ -110,6 +110,7 @@
 		9679BF1118CFBA2F0003F172 /* CAPNMessageBuilderBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9679BF1018CFBA2F0003F172 /* CAPNMessageBuilderBase.mm */; };
 		9679BF1418CFC1610003F172 /* CAPNDynamic.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9679BF1318CFC1610003F172 /* CAPNDynamic.mm */; };
 		9679BF1718CFD7C20003F172 /* CAPNSchema.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9679BF1618CFD7C20003F172 /* CAPNSchema.mm */; };
+		9679BF1A18CFFCE80003F172 /* CAPNCommon.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9679BF1918CFFCE80003F172 /* CAPNCommon.mm */; };
 		968582E318CDDA9D0088EE70 /* libgtest-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963BAAB418CD19900066EF3A /* libgtest-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -374,6 +375,8 @@
 		9679BF1318CFC1610003F172 /* CAPNDynamic.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAPNDynamic.mm; sourceTree = "<group>"; };
 		9679BF1518CFD7C20003F172 /* CAPNSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPNSchema.h; sourceTree = "<group>"; };
 		9679BF1618CFD7C20003F172 /* CAPNSchema.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAPNSchema.mm; sourceTree = "<group>"; };
+		9679BF1818CFFCE80003F172 /* CAPNCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPNCommon.h; sourceTree = "<group>"; };
+		9679BF1918CFFCE80003F172 /* CAPNCommon.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAPNCommon.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -496,6 +499,8 @@
 				9679BF1318CFC1610003F172 /* CAPNDynamic.mm */,
 				9679BF1518CFD7C20003F172 /* CAPNSchema.h */,
 				9679BF1618CFD7C20003F172 /* CAPNSchema.mm */,
+				9679BF1818CFFCE80003F172 /* CAPNCommon.h */,
+				9679BF1918CFFCE80003F172 /* CAPNCommon.mm */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -958,6 +963,7 @@
 				963BA9F818CD0CF60066EF3A /* mutex.c++ in Sources */,
 				963BA9C118CD0CB90066EF3A /* serialize-async.c++ in Sources */,
 				963BA9B418CD0CB90066EF3A /* dynamic.c++ in Sources */,
+				9679BF1A18CFFCE80003F172 /* CAPNCommon.mm in Sources */,
 				963BA9BE18CD0CB90066EF3A /* schema-loader.c++ in Sources */,
 				963BA9F718CD0CF60066EF3A /* memory.c++ in Sources */,
 				963BA9B218CD0CB90066EF3A /* capability.c++ in Sources */,

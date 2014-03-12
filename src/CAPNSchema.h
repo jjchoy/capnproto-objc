@@ -30,6 +30,28 @@
 
 @class CAPNListSchema;
 
+typedef NS_ENUM(NSUInteger, CAPNSchemaType) {
+    CAPNSchemaTypeVoid,
+    CAPNSchemaTypeBool,
+    CAPNSchemaTypeInt8,
+    CAPNSchemaTypeInt16,
+    CAPNSchemaTypeInt32,
+    CAPNSchemaTypeInt64,
+    CAPNSchemaTypeUInt8,
+    CAPNSchemaTypeUInt6,
+    CAPNSchemaTypeUInt32,
+    CAPNSchemaTypeUInt64,
+    CAPNSchemaTypeFloat32,
+    CAPNSchemaTypeFloat64,
+    CAPNSchemaTypeText,
+    CAPNSchemaTypeData,
+    CAPNSchemaTypeList,
+    CAPNSchemaTypeEnum,
+    CAPNSchemaTypeStruct,
+    CAPNSchemaTypeInterface,
+    CAPNSchemaTypeAnyPointer
+};
+
 @interface CAPNSchema : NSObject
 
 #ifdef __cplusplus
@@ -69,6 +91,8 @@
 #ifdef __cplusplus
 
 - (id)initWithField:(capnp::StructSchema::Field&&)field;
+
+@property (readonly) capnp::StructSchema::Field field;
 
 #endif
 
@@ -177,6 +201,11 @@
 
 #endif
 
-// TODO
+@property (readonly) CAPNSchemaType elementType;
+
+@property (readonly) CAPNStructSchema *structElementType;
+@property (readonly) CAPNEnumSchema *enumElementType;
+@property (readonly) CAPNInterfaceSchema *interfaceElementType;
+@property (readonly) CAPNListSchema *listElementType;
 
 @end

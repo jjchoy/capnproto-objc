@@ -25,8 +25,6 @@
 
 @interface CAPNStructSchemaField ()
 
-@property (readonly) capnp::StructSchema::Field field;
-
 @end
 
 @interface CAPNStructSchemaFieldList ()
@@ -66,6 +64,12 @@
 @interface CAPNConstSchema ()
 
 @property (readonly) capnp::ConstSchema schema;
+
+@end
+
+@interface CAPNListSchema ()
+
+@property (readonly) capnp::ListSchema schema;
 
 @end
 
@@ -286,6 +290,38 @@
 
 - (uint32_t)valueSchemaOffset {
     return self.schema.getValueSchemaOffset();
+}
+
+@end
+
+@implementation CAPNListSchema
+
+- (id)initWithSchema:(capnp::ListSchema &&)schema {
+    self = [super init];
+    if (self) {
+        _schema = std::move(schema);
+    }
+    return self;
+}
+
+- (CAPNSchemaType)elementType {
+    return static_cast<CAPNSchemaType>(self.schema.whichElementType());
+}
+
+- (CAPNStructSchema *)structElementType {
+    return [[CAPNStructSchema alloc] initWithSchema:self.schema.getStructElementType()];
+}
+
+- (CAPNEnumSchema *)enumElementType {
+    return [[CAPNEnumSchema alloc] initWithSchema:self.schema.getEnumElementType()];
+}
+
+- (CAPNInterfaceSchema *)interfaceElementType {
+    return [[CAPNInterfaceSchema alloc] initWithSchema:self.schema.getInterfaceElementType()];
+}
+
+- (CAPNListSchema *)listElementType {
+    return [[CAPNListSchema alloc] initWithSchema:self.schema.getListElementType()];
 }
 
 @end

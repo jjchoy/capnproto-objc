@@ -127,7 +127,7 @@
 
 @implementation CAPNDynamicValueBuilder
 
-- (id)initWithReader:(capnp::DynamicValue::Builder *)builder {
+- (id)initWithBuilder:(capnp::DynamicValue::Builder *)builder {
     self = [super init];
     if (self) {
         _builder = *builder;
@@ -251,6 +251,17 @@
     return self;
 }
 
+- (CAPNEnumSchema *)schema {
+    return [[CAPNEnumSchema alloc] initWithSchema:self.dynamicEnum.getSchema()];
+}
+
+- (CAPNEnumerant *)enumerant {
+    KJ_IF_MAYBE(enumerant, self.dynamicEnum.getEnumerant()) {
+        return [[CAPNEnumerant alloc] initWithEnumerant:std::move(*enumerant)];
+    }
+    return nil;
+}
+
 - (uint16_t)rawValue {
     return self.dynamicEnum.getRaw();
 }
@@ -267,6 +278,37 @@
     return self;
 }
 
+- (CAPNStructSchema *)schema {
+    return [[CAPNStructSchema alloc] initWithSchema:self.reader.getSchema()];
+}
+
+- (CAPNDynamicValueReader *)get:(CAPNStructSchemaField *)field {
+    return [[CAPNDynamicValueReader alloc] initWithReader:self.reader.get(field.field)];
+}
+
+- (BOOL)has:(CAPNStructSchemaField *)field {
+    return self.reader.has(field.field);
+}
+
+- (CAPNStructSchemaField *)which {
+    KJ_IF_MAYBE(field, self.reader.which()) {
+        return [[CAPNStructSchemaField alloc] initWithField:std::move(*field)];
+    }
+    return nil;
+}
+
+- (CAPNDynamicValueReader *)getByName:(NSString *)name {
+    try {
+        return [[CAPNDynamicValueReader alloc] initWithReader:self.reader.get(kj::StringPtr([name UTF8String], [name lengthOfBytesUsingEncoding:NSUTF8StringEncoding]))];
+    } catch (...) {
+        return nil;
+    }
+}
+
+- (BOOL)hasByName:(NSString *)name {
+    return self.reader.has(kj::StringPtr([name UTF8String], [name lengthOfBytesUsingEncoding:NSUTF8StringEncoding]));
+}
+
 @end
 
 @implementation CAPNDynamicStructBuilder
@@ -277,6 +319,42 @@
         _builder = std::move(builder);
     }
     return self;
+}
+
+- (CAPNMessageSize *)totalSize {
+    return [[CAPNMessageSize alloc] initWithMessageSize:self.builder.totalSize()];
+}
+
+- (CAPNStructSchema *)schema {
+    return [[CAPNStructSchema alloc] initWithSchema:self.builder.getSchema()];
+}
+
+- (CAPNDynamicValueBuilder *)get:(CAPNStructSchemaField *)field {
+    return [[CAPNDynamicValueBuilder alloc] initWithBuilder:self.builder.get(field.field)];
+}
+
+- (BOOL)has:(CAPNStructSchemaField *)field {
+    return self.builder.has(field.field);
+}
+
+- (void)setValue:(CAPNDynamicValueReader *)value forField:(CAPNStructSchemaField *)field {
+    self.builder.set(field.field, value.reader);
+}
+
+- (CAPNDynamicValueBuilder *)initialiseField:(CAPNStructSchemaField *)field {
+    return [[CAPNDynamicValueBuilder alloc] initWithBuilder:self.builder.init(field.field)];
+}
+
+- (CAPNDynamicValueBuilder *)initialiseField:(CAPNStructSchemaField *)field count:(NSUInteger)count {
+    return [[CAPNDynamicValueBuilder alloc] initWithBuilder:self.builder.init(field.field, count)];
+}
+
+- (void)clear:(CAPNStructSchemaField *)field {
+    self.builder.clear(field.field);
+}
+
+- (CAPNDynamicStructReader *)asReader {
+    return [[CAPNDynamicStructReader alloc] initWithReader:self.builder.asReader()];
 }
 
 @end
@@ -291,6 +369,18 @@
     return self;
 }
 
+- (CAPNListSchema *)schema {
+    return [[CAPNListSchema alloc] initWithSchema:self.reader.getSchema()];
+}
+
+- (NSUInteger)count {
+    return self.reader.size();
+}
+
+- (id)objectAtIndexedSubscript:(NSUInteger)index {
+    return [[CAPNDynamicValueReader alloc] initWithReader:self.reader[index]];
+}
+
 @end
 
 @implementation CAPNDynamicListBuilder
@@ -301,6 +391,31 @@
         _builder = std::move(builder);
     }
     return self;
+}
+
+- (CAPNListSchema *)schema {
+    return [[CAPNListSchema alloc] initWithSchema:self.builder.getSchema()];
+}
+
+- (NSUInteger)count {
+    return self.builder.size();
+}
+
+- (id)objectAtIndexedSubscript:(NSUInteger)index {
+    return [[CAPNDynamicValueBuilder alloc] initWithBuilder:self.builder[index]];
+}
+
+- (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)idx {
+    NSAssert([obj isKindOfClass:[CAPNDynamicValueReader class]], @"setObject:atIndexedSubscript: can only be called with CAPNDynamicValueReader's");
+    self.builder.set(idx, ((CAPNDynamicValueReader *)obj).reader);
+}
+
+- (void)initialiseIndex:(NSUInteger)index count:(NSUInteger)count {
+    self.builder.init(index, count);
+}
+
+- (CAPNDynamicListReader *)asReader {
+    return [[CAPNDynamicListReader alloc] initWithReader:self.builder.asReader()];
 }
 
 @end

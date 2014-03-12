@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+#import "CAPNCommon.h"
+#import "CAPNSchema.h"
+
 #ifdef __cplusplus
 
 #include <capnp/dynamic.h>
@@ -67,7 +70,7 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 
 #ifdef __cplusplus
 
-- (id)initWithReader:(capnp::DynamicValue::Builder&&)builder;
+- (id)initWithBuilder:(capnp::DynamicValue::Builder&&)builder;
 
 #endif
 
@@ -98,6 +101,8 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 
 #endif
 
+@property (readonly) CAPNEnumSchema *schema;
+@property (readonly) CAPNEnumerant *enumerant;
 @property (readonly) uint16_t rawValue;
 
 @end
@@ -110,6 +115,17 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 
 #endif
 
+@property (readonly) CAPNMessageSize *totalSize;
+@property (readonly) CAPNStructSchema *schema;
+
+- (CAPNDynamicValueReader *)get:(CAPNStructSchemaField *)field;
+- (BOOL)has:(CAPNStructSchemaField *)field;
+
+@property (readonly) CAPNStructSchemaField *which;
+
+- (CAPNDynamicValueReader *)getByName:(NSString *)name;
+- (BOOL)hasByName:(NSString *)name;
+
 @end
 
 @interface CAPNDynamicStructBuilder : NSObject
@@ -119,6 +135,25 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 - (id)initWithBuilder:(capnp::DynamicStruct::Builder&&)builder;
 
 #endif
+
+@property (readonly) CAPNMessageSize *totalSize;
+@property (readonly) CAPNStructSchema *schema;
+
+- (CAPNDynamicValueBuilder *)get:(CAPNStructSchemaField *)field;
+- (BOOL)has:(CAPNStructSchemaField *)field;
+
+- (void)setValue:(CAPNDynamicValueReader *)value forField:(CAPNStructSchemaField *)field;
+- (CAPNDynamicValueBuilder *)initialiseField:(CAPNStructSchemaField *)field;
+- (CAPNDynamicValueBuilder *)initialiseField:(CAPNStructSchemaField *)field count:(NSUInteger)count;
+
+// TODO: adopt
+// TODO: disown
+
+- (void)clear:(CAPNStructSchemaField *)field;
+
+// TODO: Add string-based accessors
+
+- (CAPNDynamicStructReader *)asReader;
 
 @end
 
@@ -130,6 +165,11 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 
 #endif
 
+@property (readonly) CAPNListSchema *schema;
+
+- (NSUInteger)count;
+- (id)objectAtIndexedSubscript:(NSUInteger)index;
+
 @end
 
 @interface CAPNDynamicListBuilder : NSObject
@@ -139,5 +179,18 @@ typedef NS_ENUM(NSUInteger, CAPNDynamicValueType) {
 - (id)initWithBuilder:(capnp::DynamicList::Builder&&)builder;
 
 #endif
+
+@property (readonly) CAPNListSchema *schema;
+
+- (NSUInteger)count;
+- (id)objectAtIndexedSubscript:(NSUInteger)index;
+- (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)idx;
+- (void)initialiseIndex:(NSUInteger)index count:(NSUInteger)count;
+
+// TODO: adopt
+// TODO: disown
+// TODO: copyFrom?
+
+- (CAPNDynamicListReader *)asReader;
 
 @end
