@@ -1,6 +1,6 @@
 //
-//  capnprotoTests.m
-//  capnprotoTests
+//  kjTests.m
+//  kjTests
 //
 //  Created by Jason Choy on 27/03/2014.
 //  Copyright (c) 2014 Jason Choy. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface capnprotoTests : XCTestCase
+@interface kjTests : XCTestCase
 
 @end
 
-@implementation capnprotoTests
+@implementation kjTests
 
 - (void)setUp
 {

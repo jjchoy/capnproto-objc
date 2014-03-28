@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5F624B2F-8287-4ABA-AEEC-9E7F5684A5CA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>capnproto</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4A0F6324-622E-4558-A78C-477B50DE7167</key>
+		<string>ssh://github.com/jjwchoy/capnproto.git</string>
+		<key>E68F0DDD-A5D6-4F89-B853-51685A2E57AE</key>
+		<string>ssh://github.com/jjwchoy/capnproto-objc.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>capnproto.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4A0F6324-622E-4558-A78C-477B50DE7167</key>
+		<string>../../capnproto</string>
+		<key>E68F0DDD-A5D6-4F89-B853-51685A2E57AE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/jjwchoy/capnproto-objc.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E68F0DDD-A5D6-4F89-B853-51685A2E57AE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E68F0DDD-A5D6-4F89-B853-51685A2E57AE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>capnproto</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4A0F6324-622E-4558-A78C-477B50DE7167</string>
+			<key>IDESourceControlWCCName</key>
+			<string>capnproto</string>
+		</dict>
+	</array>
+</dict>
+</plist>

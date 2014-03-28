@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "capnproto/c++/src/kj/async-unix-test.c++"
+            timestampString = "416270214.814059"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "TEST_F(AsyncUnixTest, SignalsMultiListen)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kj::AsyncUnixTest_SignalsAsync_Test::TestBody()"
+                  moduleName = "capnprotoCxxTestsIos"
+                  urlString = "file:///Users/jason/git/capnproto/capnproto/c++/src/kj/async-unix-test.c++"
+                  timestampString = "416100460.881993"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__cxx_global_var_init5"
+                  moduleName = "capnprotoCxxTestsIos"
+                  urlString = "file:///Users/jason/git/capnproto/capnproto/c++/src/kj/async-unix-test.c++"
+                  timestampString = "416100460.882347"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kj::AsyncUnixTest_SignalsAsync_Test::~AsyncUnixTest_SignalsAsync_Test()"
+                  moduleName = "capnprotoCxxTestsIos"
+                  urlString = "file:///Users/jason/git/capnproto/capnproto/c++/src/kj/async-unix-test.c++"
+                  timestampString = "416100460.882568"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "10">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kj::AsyncUnixTest_SignalsAsync_Test::~AsyncUnixTest_SignalsAsync_Test()"
+                  moduleName = "capnprotoCxxTestsIos"
+                  urlString = "file:///Users/jason/git/capnproto/capnproto/c++/src/kj/async-unix-test.c++"
+                  timestampString = "416100460.882782"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "10">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kj::AsyncUnixTest_SignalsAsync_Test::~AsyncUnixTest_SignalsAsync_Test()"
+                  moduleName = "capnprotoCxxTestsIos"
+                  urlString = "file:///Users/jason/git/capnproto/capnproto/c++/src/kj/async-unix-test.c++"
+                  timestampString = "416100460.882969"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "10">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kj::AsyncUnixTest_SignalsAsync_Test::AsyncUnixTest_SignalsAsync_Test()"
+                  moduleName = "capnprotoCxxTestsIos"
+                  urlString = "file:///Users/jason/git/capnproto/capnproto/c++/src/kj/async-unix-test.c++"
+                  timestampString = "416100460.883219"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "10">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kj::AsyncUnixTest_SignalsAsync_Test::AsyncUnixTest_SignalsAsync_Test()"
+                  moduleName = "capnprotoCxxTestsIos"
+                  urlString = "file:///Users/jason/git/capnproto/capnproto/c++/src/kj/async-unix-test.c++"
+                  timestampString = "416100460.883412"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "10">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "capnproto/c++/src/kj/threadlocal.h"
+            timestampString = "416149986.784382"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kj::ThreadLocal&lt;capnp::EzRpcContext&gt;::operator=(std::nullptr_t)"
+                  moduleName = "capnprotoCxxTestsIos"
+                  urlString = "file:///Users/jason/git/capnproto/capnproto/c++/src/kj/threadlocal.h"
+                  timestampString = "416144909.687388"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kj::ThreadLocal&lt;kj::EventLoop&gt;::operator=(std::nullptr_t)"
+                  moduleName = "capnprotoCxxTestsIos"
+                  urlString = "file:///Users/jason/git/capnproto/capnproto/c++/src/kj/threadlocal.h"
+                  timestampString = "416144909.68772"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kj::ThreadLocal&lt;kj::(anonymous namespace)::SignalCapture&gt;::operator=(std::nullptr_t)"
+                  moduleName = "capnprotoCxxTestsIos"
+                  urlString = "file:///Users/jason/git/capnproto/capnproto/c++/src/kj/threadlocal.h"
+                  timestampString = "416144909.688014"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "26">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/CAPNSchema.mm"
+            timestampString = "416276410.826718"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/CAPNSchema.h"
+            timestampString = "416281149.114605"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "interfaceElementType"
+            landmarkType = "19">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

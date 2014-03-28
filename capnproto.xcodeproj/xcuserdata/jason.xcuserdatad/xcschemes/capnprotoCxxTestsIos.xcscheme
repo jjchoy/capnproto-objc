@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "963BA94D18CD0B540066EF3A"
-               BuildableName = "libcapnproto-ios.a"
-               BlueprintName = "capnproto-ios"
+               BlueprintIdentifier = "963BAA6C18CD174B0066EF3A"
+               BuildableName = "capnprotoCxxTestsIos.app"
+               BlueprintName = "capnprotoCxxTestsIos"
                ReferencedContainer = "container:capnproto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "963BA95D18CD0B540066EF3A"
-               BuildableName = "capnprotoTests.xctest"
-               BlueprintName = "capnprotoTests"
-               ReferencedContainer = "container:capnproto.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "963BAA8318CD174B0066EF3A"
-               BuildableName = "capnprotoCxxTestsIosTests.xctest"
-               BlueprintName = "capnprotoCxxTestsIosTests"
-               ReferencedContainer = "container:capnproto.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
@@ -79,6 +59,15 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "963BAA6C18CD174B0066EF3A"
+            BuildableName = "capnprotoCxxTestsIos.app"
+            BlueprintName = "capnprotoCxxTestsIos"
+            ReferencedContainer = "container:capnproto.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -89,6 +78,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "963BAA6C18CD174B0066EF3A"
+            BuildableName = "capnprotoCxxTestsIos.app"
+            BlueprintName = "capnprotoCxxTestsIos"
+            ReferencedContainer = "container:capnproto.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

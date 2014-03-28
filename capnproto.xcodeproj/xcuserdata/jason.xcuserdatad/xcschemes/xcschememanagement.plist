@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>capnproto 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>capnproto-osx.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 		<key>capnproto.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -19,6 +29,11 @@
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
+		<key>kj.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
 		<key>tests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -27,6 +42,36 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>960E5A7618E4B4B800DEBB5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>960E5A8B18E4B4B800DEBB5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>960E5AAE18E4B51200DEBB5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>960E5ABE18E4B51300DEBB5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>960E5B0318E4B5F900DEBB5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>960E5B1318E4B5F900DEBB5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>963BA94D18CD0B540066EF3A</key>
 		<dict>
 			<key>primary</key>
